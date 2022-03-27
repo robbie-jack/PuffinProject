@@ -1,0 +1,39 @@
+[Instantiate]
+class CTest
+{
+    CTest()
+    {
+        Print("Hello world\n");
+
+        secondsPassed = 0;
+        timeCount = 0.0;
+    }
+
+    void Start()
+    {
+        Print("Game Starting\n");
+    }
+
+    void Update()
+    {
+        timeCount += GetDeltaTime();
+
+        if (timeCount >= 1.0)
+        {
+            timeCount -= 1.0;
+            secondsPassed++;
+            Print("Time Since Game Start: " + secondsPassed + " Seconds");
+        }
+    }
+
+    void Stop()
+    {
+        Print("Game Stopping\n");
+    }
+
+    [Visible]
+    private int secondsPassed;
+
+    [Visible]
+    private double timeCount;
+}
