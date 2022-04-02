@@ -4,14 +4,15 @@ class CTest
     CTest()
     {
         Print("Hello world\n");
-
-        secondsPassed = 0;
-        timeCount = 0.0;
     }
 
     void Start()
     {
-        Print("Game Starting\n");
+        Print("Game Starting");
+
+        secondsPassed = startingTime;
+
+        Print("Starting Time: " + startingTime);
     }
 
     void Update()
@@ -31,9 +32,12 @@ class CTest
         Print("Game Stopping\n");
     }
 
-    [Visible]
-    private int secondsPassed;
+    [Editable]
+    private int startingTime = 0;
 
     [Visible]
-    private double timeCount;
+    private int secondsPassed = 0;
+
+    [Visible]
+    private double timeCount = 0.0;
 }
