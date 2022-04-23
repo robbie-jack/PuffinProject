@@ -8,11 +8,14 @@ class CTest
 
     void Start()
     {
-        Print("Game Starting");
-
         secondsPassed = startingTime;
 
+        BindOnInputPressed(GetEntityID(), "Spacebar", OnInputPressed(this.OnSpacebarPressed));
+        BindOnInputReleased(GetEntityID(), "Spacebar", OnInputReleased(this.OnSpacebarReleased));
+
+        Print("Game Starting");
         Print("Starting Time: " + startingTime);
+        Print("Entity ID: " + GetEntityID());
     }
 
     void Update()
@@ -24,6 +27,11 @@ class CTest
             timeCount -= 1.0;
             secondsPassed++;
             Print("Time Since Game Start: " + secondsPassed + " Seconds");
+            
+            if (isSpacebarPressed)
+            {
+                Print("Spacebar is Held");
+            }
         }
     }
 
@@ -31,6 +39,22 @@ class CTest
     {
         Print("Game Stopping\n");
     }
+
+    void OnSpacebarPressed()
+    {
+        isSpacebarPressed = true;
+
+        Print("Space Pressed");
+    }
+
+    void OnSpacebarReleased()
+    {
+        isSpacebarPressed = false;
+
+        Print("Space Released");
+    }
+
+    private bool isSpacebarPressed = false;
 
     [Editable]
     private int startingTime = 0;
