@@ -1,6 +1,4 @@
 {
-    "value0": {
-        "Camera FOV": 60.0,
-        "Mouse Sensitivity": 0.05
-    }
+    "cameraFov": 60.0,
+    "mouseSensitivity": 0.05000000074505806
 }

@@ -1,6 +1,4 @@
 {
-    "value0": {
-        "Project Name": "Puffin",
-        "Default Scene": "scenes\\default.pscene"
-    }
+    "name": "Puffin",
+    "defaultScenePath": "scenes\\physics.pscene"
 }
