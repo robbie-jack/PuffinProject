@@ -1,0 +1,35 @@
+[Instantiate]
+class PhysicsTest
+{
+    PhysicsTest()
+    {
+
+    }
+
+    void Start()
+    {
+        BindOnCollisionBegin(GetEntityID(), OnCollisionBeginCallback(this.OnCollisionBegin));
+        //BindOnCollisionEnd(GetEntityID(), OnCollisionEndCallback(this.OnCollisionEnd));
+    }
+
+    void Update()
+    {
+
+    }
+
+    void Stop()
+    {
+        ReleaseOnCollisionBegin(GetEntityID());
+        //ReleaseOnCollisionEnd(GetEntityID());
+    }
+
+    void OnCollisionBegin(uint otherEntity)
+    {
+        Print("Collision began with " + otherEntity);
+    }
+
+    void OnCollisionEnd(uint otherEntity)
+    {
+        Print("Collision ended with " + otherEntity);
+    }
+}

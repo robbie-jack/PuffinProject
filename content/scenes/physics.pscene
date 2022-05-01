@@ -191,7 +191,28 @@
             }
         ]
     ],
-    "Scripts": null,
+    "Scripts": [
+        [
+            2,
+            {
+                "dir": "C:\\Projects\\PuffinProject\\content\\scripts\\Physics.pscript",
+                "name": "PhysicsScript",
+                "serializedData": {
+                    "boolProperties": {},
+                    "doubleProperties": {},
+                    "floatProperties": {},
+                    "int16Properties": {},
+                    "int32Properties": {},
+                    "int64Properties": {},
+                    "int8Properties": {},
+                    "uint16Properties": {},
+                    "uint32Properties": {},
+                    "uint64Properties": {},
+                    "uint8Properties": {}
+                }
+            }
+        ]
+    ],
     "Transforms": [
         [
             1,

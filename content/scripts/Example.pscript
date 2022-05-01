@@ -10,8 +10,8 @@ class CExample
     {
         secondsPassed = startingTime;
 
-        BindOnInputPressed(GetEntityID(), "Spacebar", OnInputPressed(this.OnSpacebarPressed));
-        BindOnInputReleased(GetEntityID(), "Spacebar", OnInputReleased(this.OnSpacebarReleased));
+        BindOnInputPressed(GetEntityID(), "Spacebar", OnInputPressedCallback(this.OnSpacebarPressed));
+        BindOnInputReleased(GetEntityID(), "Spacebar", OnInputReleasedCallback(this.OnSpacebarReleased));
 
         Print("Game Starting");
         Print("Starting Time: " + startingTime);
