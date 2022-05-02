@@ -31,8 +31,9 @@ layout(location = 5) flat out int fragInstance;
 
 void main()
 {
-	mat4 modelMatrix = objectBuffer.objects[gl_BaseInstance].model;
-	mat4 modelMatrixInverse = objectBuffer.objects[gl_BaseInstance].inv_model;
+	int index = gl_BaseInstance + gl_InstanceIndex;
+	mat4 modelMatrix = objectBuffer.objects[index].model;
+	mat4 modelMatrixInverse = objectBuffer.objects[index].inv_model;
 	mat4 viewProjMatrix = camera.viewProj;
 
 	fragWorldPos = modelMatrix * vec4(inPos, 1.0);
@@ -43,7 +44,7 @@ void main()
 	fragNormal = mNormal * normalize(inNormal);
 	fragTangent = mNormal * normalize(inTangent);
 
-	fragInstance = gl_BaseInstance;
+	fragInstance = index;
 
 	gl_Position = viewProjMatrix *  fragWorldPos;
 }
