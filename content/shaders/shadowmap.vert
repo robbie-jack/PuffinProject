@@ -25,7 +25,8 @@ layout(location = 4) in vec2 inUV;
 
 void main()
 {
-	mat4 modelMatrix = objectBuffer.objects[gl_BaseInstance].model;
+	int index = gl_BaseInstance + gl_InstanceIndex;
+	mat4 modelMatrix = objectBuffer.objects[index].model;
 
 	gl_Position = light.lightSpaceMatrix * modelMatrix * vec4(inPos, 1.0);
 }

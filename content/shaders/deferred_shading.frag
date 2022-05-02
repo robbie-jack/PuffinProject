@@ -12,41 +12,38 @@ layout(set = 0, binding = 1) uniform sampler2D samplerPosition;
 layout(set = 0, binding = 2) uniform sampler2D samplerNormal;
 layout(set = 0, binding = 3) uniform sampler2D samplerAlbedoSpec;
 
-struct PointLightData
+struct LightData
 {
 	vec3 ambientColor;
 	vec3 diffuseColor;
+	
+	float specularStrength;
+	int shininess;
+	
+	mat4 lightSpaceView;
+	int shadowmapIndex;
+};
 
+struct PointLightData
+{
 	vec3 position;
 
 	float constant;
 	float linear;
 	float quadratic;
-
-	float specularStrength;
-	int shininess;
-
-	int shadowmapIndex;
+	
+	int dataIndex;
 };
 
 struct DirectionalLightData
 {
-	vec3 ambientColor;
-	vec3 diffuseColor;
-
 	vec3 direction;
-
-	float specularStrength;
-	int shininess;
-
-	int shadowmapIndex;
+	
+	int dataIndex;
 };
 
 struct SpotLightData
 {
-	vec3 ambientColor;
-	vec3 diffuseColor;
-
 	vec3 position;
 	vec3 direction;
 
@@ -56,29 +53,31 @@ struct SpotLightData
 	float constant;
 	float linear;
 	float quadratic;
-
-	float specularStrength;
-	int shininess;
-
-	int shadowmapIndex;
+	
+	int dataIndex;
 };
 
-layout(std140, set = 0, binding = 4) readonly buffer PointLightBuffer
+layout(std140, set = 0, binding = 4) readonly buffer LightBuffer
+{
+	LightData data[];
+} lights;
+
+layout(std140, set = 0, binding = 5) readonly buffer PointLightBuffer
 {
 	PointLightData data[];
 } pointLights;
 
-layout(std140, set = 0, binding = 5) readonly buffer DirectionalLightBuffer
+layout(std140, set = 0, binding = 6) readonly buffer DirectionalLightBuffer
 {
 	DirectionalLightData data[];
 } dirLights;
 
-layout(std140, set = 0, binding = 6) readonly buffer SpotLightBuffer
+layout(std140, set = 0, binding = 7) readonly buffer SpotLightBuffer
 {
 	SpotLightData data[];
 } spotLights;
 
-layout(set = 0, binding = 7) uniform LightStatsData
+layout(set = 0, binding = 8) uniform LightStatsData
 {
 	int numPointLights;
 	int numDirLights;
@@ -92,9 +91,9 @@ layout(location = 0) in vec2 fragUV;
 layout (location = 0) out vec4 outColor;
 
 // Calculate how much light is contributed to fragment
-vec3 CalcPointLight(PointLightData light, vec3 normal, vec3 viewDir, vec3 fragPos);
-vec3 CalcDirLight(DirectionalLightData light, vec3 normal, vec3 viewDir);
-vec3 CalcSpotLight(SpotLightData light, vec3 normal, vec3 viewDir, vec3 fragPos);
+vec3 CalcPointLight(PointLightData light, LightData data, vec3 normal, vec3 viewDir, vec3 fragPos);
+vec3 CalcDirLight(DirectionalLightData light, LightData data, vec3 normal, vec3 viewDir);
+vec3 CalcSpotLight(SpotLightData light, LightData data, vec3 normal, vec3 viewDir, vec3 fragPos);
 
 // Calculate if fragment is in shadow
 float ShadowCalculation(sampler2D shadowMap, vec4 fragPosLightSpace, vec3 normal, vec3 lightDir);
@@ -136,27 +135,27 @@ void main()
 	int pLights = lightStats.numPointLights;
 	for (int i = 0; i < pLights; i++)
 	{
-		result += CalcPointLight(pointLights.data[i], fragNormal, viewDir, fragPos);
+		result += CalcPointLight(pointLights.data[i], lights.data[pointLights.data[i].dataIndex], fragNormal, viewDir, fragPos);
 	}
 
 	// Calculate Directional Lights
 	int dLights = lightStats.numDirLights;
 	for (int i = 0; i < dLights; i++)
 	{
-		result += CalcDirLight(dirLights.data[i], fragNormal, viewDir);
+		result += CalcDirLight(dirLights.data[i], lights.data[pointLights.data[i].dataIndex], fragNormal, viewDir);
 	}
 
 	// Calculate Spot Lights
 	int sLights = lightStats.numSpotLights;
 	for (int i = 0; i < sLights; i++)
 	{
-		result += CalcSpotLight(spotLights.data[i], fragNormal, viewDir, fragPos);
+		result += CalcSpotLight(spotLights.data[i], lights.data[pointLights.data[i].dataIndex], fragNormal, viewDir, fragPos);
 	}
 
 	outColor = vec4(fragAlbedoSpec.rgb * result, 1.0);
 }
 
-vec3 CalcPointLight(PointLightData light, vec3 normal, vec3 viewDir, vec3 fragPos)
+vec3 CalcPointLight(PointLightData light, LightData data, vec3 normal, vec3 viewDir, vec3 fragPos)
 {
 	vec3 lightDir = normalize(light.position - fragPos);
 	vec3 halfwayDir = normalize(lightDir + viewDir);
@@ -164,32 +163,32 @@ vec3 CalcPointLight(PointLightData light, vec3 normal, vec3 viewDir, vec3 fragPo
 	float distance = length(light.position - fragPos);
 	float attenuation = 1.0 / (light.constant + light.linear * distance + light.quadratic * (distance * distance));
 
-	vec3 ambient = light.ambientColor * attenuation;
+	vec3 ambient = data.ambientColor * attenuation;
 
 	float diff = max(dot(normal, lightDir), 0.0);
-	vec3 diffuse = diff * light.diffuseColor * attenuation;
+	vec3 diffuse = diff * data.diffuseColor * attenuation;
 
-	float spec = pow(max(dot(normal, halfwayDir), 0.0), light.shininess);
-	vec3 specular = light.specularStrength * spec * light.diffuseColor * attenuation;
+	float spec = pow(max(dot(normal, halfwayDir), 0.0), data.shininess);
+	vec3 specular = data.specularStrength * spec * data.diffuseColor * attenuation;
 	
 	return ambient + diffuse + specular;
 }
 
-vec3 CalcDirLight(DirectionalLightData light, vec3 normal, vec3 viewDir)
+vec3 CalcDirLight(DirectionalLightData light, LightData data, vec3 normal, vec3 viewDir)
 {
 	vec3 lightDir = normalize(-light.direction);
 	vec3 halfwayDir = normalize(lightDir + viewDir);
 
 	float diff = max(dot(normal, lightDir), 0.0);
-	vec3 diffuse = diff * light.diffuseColor;
+	vec3 diffuse = diff * data.diffuseColor;
 
-	float spec = pow(max(dot(normal, halfwayDir), 0.0), light.shininess);
-	vec3 specular = light.specularStrength * spec * light.diffuseColor;
+	float spec = pow(max(dot(normal, halfwayDir), 0.0), data.shininess);
+	vec3 specular = data.specularStrength * spec * data.diffuseColor;
 	
-	return light.ambientColor + diffuse + specular;
+	return data.ambientColor + diffuse + specular;
 }
 
-vec3 CalcSpotLight(SpotLightData light, vec3 normal, vec3 viewDir, vec3 fragPos)
+vec3 CalcSpotLight(SpotLightData light, LightData data, vec3 normal, vec3 viewDir, vec3 fragPos)
 {
 	vec3 lightDir = normalize(light.position - fragPos);
 	vec3 halfwayDir = normalize(lightDir + viewDir);
@@ -197,26 +196,28 @@ vec3 CalcSpotLight(SpotLightData light, vec3 normal, vec3 viewDir, vec3 fragPos)
 	float distance = length(light.position - fragPos);
 	float attenuation = 1.0 / (light.constant + light.linear * distance + light.quadratic * (distance * distance));
 
-	vec3 ambient = light.ambientColor * attenuation;
+	vec3 ambient = data.ambientColor * attenuation;
 
 	float diff = max(dot(normal, lightDir), 0.0);
-	vec3 diffuse = diff * light.diffuseColor * attenuation;
+	vec3 diffuse = diff * data.diffuseColor * attenuation;
 
-	float spec = pow(max(dot(normal, halfwayDir), 0.0), light.shininess);
-	vec3 specular = light.specularStrength * spec * light.diffuseColor * attenuation;
+	float spec = pow(max(dot(normal, halfwayDir), 0.0), data.shininess);
+	vec3 specular = data.specularStrength * spec * data.diffuseColor * attenuation;
 
 	float theta = dot(lightDir, normalize(-light.direction));
 	float epsilon = light.innerCutoff - light.outerCutoff;
 	float intensity = clamp((theta - light.outerCutoff) / epsilon, 0.0, 1.0);
+	
+	vec4 fragPosLightSpace = data.lightSpaceView * vec4(fragPos, 1.0);
 
-	//float shadow = light.shadowmapIndex != -1 ? 
-	//ShadowCalculation(shadowmaps[light.shadowmapIndex], fragPosLightSpace[light.shadowmapIndex], normal, lightDir) : 1.0;
+	float shadow = data.shadowmapIndex != -1 ? 
+	ShadowCalculation(shadowmaps[data.shadowmapIndex], fragPosLightSpace, normal, lightDir) : 1.0;
 
 	diffuse *= intensity;
 	specular *= intensity;
 
-	//return ambient + (shadow * (diffuse + specular));
-	return ambient + diffuse + specular;
+	return ambient + (shadow * (diffuse + specular));
+	//return ambient + diffuse + specular;
 }
 
 float ShadowCalculation(sampler2D shadowMap, vec4 fragPosLightSpace, vec3 normal, vec3 lightDir)
