@@ -2,89 +2,101 @@
     "paths": [
         [
             {
-                "uuid": 5079706339412559708
+                "uuid": 18350623972674393860
             },
             "meshes\\chalet.pstaticmesh"
         ],
         [
             {
-                "uuid": 4053057455087960494
-            },
-            "textures\\chalet.ptexture"
-        ],
-        [
-            {
-                "uuid": 9388375939549436770
+                "uuid": 7461563914104352456
             },
             "meshes\\sphere.pstaticmesh"
         ],
         [
             {
-                "uuid": 16919641721678634238
-            },
-            "meshes\\cube.pstaticmesh"
-        ],
-        [
-            {
-                "uuid": 18295893552793253497
-            },
-            "sounds\\Select 1.wav"
-        ],
-        [
-            {
-                "uuid": 8566757832210875139
+                "uuid": 9291831027415426800
             },
             "meshes\\space_engineer.pstaticmesh"
         ],
         [
             {
-                "uuid": 15291304824086870438
+                "uuid": 3499349723140706076
+            },
+            "meshes\\cube.pstaticmesh"
+        ],
+        [
+            {
+                "uuid": 8535634140398567018
+            },
+            "meshes\\Sphere.pstaticmesh"
+        ],
+        [
+            {
+                "uuid": 7777109360633946356
+            },
+            "textures\\chalet.ptexture"
+        ],
+        [
+            {
+                "uuid": 620206487159760917
             },
             "textures\\cube.ptexture"
+        ],
+        [
+            {
+                "uuid": 4851113554859946064
+            },
+            "sounds\\Select 1.wav"
         ]
     ],
     "types": [
         [
             {
-                "uuid": 5079706339412559708
+                "uuid": 18350623972674393860
             },
             "StaticMesh"
         ],
         [
             {
-                "uuid": 4053057455087960494
+                "uuid": 7461563914104352456
             },
             "StaticMesh"
         ],
         [
             {
-                "uuid": 9388375939549436770
+                "uuid": 9291831027415426800
             },
             "StaticMesh"
         ],
         [
             {
-                "uuid": 16919641721678634238
+                "uuid": 3499349723140706076
             },
             "StaticMesh"
         ],
         [
             {
-                "uuid": 18295893552793253497
+                "uuid": 8535634140398567018
+            },
+            "StaticMesh"
+        ],
+        [
+            {
+                "uuid": 7777109360633946356
+            },
+            "StaticMesh"
+        ],
+        [
+            {
+                "uuid": 620206487159760917
+            },
+            "StaticMesh"
+        ],
+        [
+            {
+                "uuid": 4851113554859946064
             },
             "Sound"
-        ],
-        [
-            {
-                "uuid": 8566757832210875139
-            },
-            "StaticMesh"
-        ],
-        [
-            {
-                "uuid": 15291304824086870438
-            },
-            "StaticMesh"
         ]
     ]
 }

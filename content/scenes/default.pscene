@@ -1,6 +1,7 @@
 {
     "Boxes": null,
     "Circles": null,
+    "DirectionalLights": null,
     "Entities": [
         1,
         2,
@@ -40,75 +41,15 @@
             "Light 2"
         ]
     ],
-    "Lights": [
-        [
-            4,
-            {
-                "ambientColor": {
-                    "x": 0.10000000149011612,
-                    "y": 0.10000000149011612,
-                    "z": 0.10000000149011612
-                },
-                "bFlagCastShadows": true,
-                "constantAttenuation": 1.0,
-                "diffuseColor": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "direction": {
-                    "x": 1.0,
-                    "y": -1.0,
-                    "z": 0.0
-                },
-                "innerCutoffAngle": 12.5,
-                "linearAttenuation": 0.09000000357627869,
-                "outerCutoffAngle": 17.5,
-                "quadraticAttenuation": 0.03200000151991844,
-                "shininess": 16,
-                "specularStrength": 0.5,
-                "type": "Spot"
-            }
-        ],
-        [
-            7,
-            {
-                "ambientColor": {
-                    "x": 0.10000000149011612,
-                    "y": 0.10000000149011612,
-                    "z": 0.10000000149011612
-                },
-                "bFlagCastShadows": false,
-                "constantAttenuation": 1.0,
-                "diffuseColor": {
-                    "x": 0.25,
-                    "y": 0.25,
-                    "z": 1.0
-                },
-                "direction": {
-                    "x": -1.0,
-                    "y": -1.0,
-                    "z": 0.0
-                },
-                "innerCutoffAngle": 12.5,
-                "linearAttenuation": 0.09000000357627869,
-                "outerCutoffAngle": 17.5,
-                "quadraticAttenuation": 0.03200000151991844,
-                "shininess": 16,
-                "specularStrength": 0.5,
-                "type": "Spot"
-            }
-        ]
-    ],
     "Meshes": [
         [
             1,
             {
                 "meshAssetID": {
-                    "uuid": 5079706339412559708
+                    "uuid": 18350623972674393860
                 },
                 "textureAssetID": {
-                    "uuid": 4053057455087960494
+                    "uuid": 7777109360633946356
                 }
             }
         ],
@@ -116,10 +57,10 @@
             2,
             {
                 "meshAssetID": {
-                    "uuid": 9388375939549436770
+                    "uuid": 7461563914104352456
                 },
                 "textureAssetID": {
-                    "uuid": 15291304824086870438
+                    "uuid": 620206487159760917
                 }
             }
         ],
@@ -127,10 +68,10 @@
             3,
             {
                 "meshAssetID": {
-                    "uuid": 16919641721678634238
+                    "uuid": 3499349723140706076
                 },
                 "textureAssetID": {
-                    "uuid": 15291304824086870438
+                    "uuid": 620206487159760917
                 }
             }
         ],
@@ -138,10 +79,10 @@
             4,
             {
                 "meshAssetID": {
-                    "uuid": 16919641721678634238
+                    "uuid": 3499349723140706076
                 },
                 "textureAssetID": {
-                    "uuid": 15291304824086870438
+                    "uuid": 620206487159760917
                 }
             }
         ],
@@ -149,10 +90,10 @@
             5,
             {
                 "meshAssetID": {
-                    "uuid": 16919641721678634238
+                    "uuid": 3499349723140706076
                 },
                 "textureAssetID": {
-                    "uuid": 15291304824086870438
+                    "uuid": 620206487159760917
                 }
             }
         ],
@@ -160,10 +101,10 @@
             6,
             {
                 "meshAssetID": {
-                    "uuid": 16919641721678634238
+                    "uuid": 3499349723140706076
                 },
                 "textureAssetID": {
-                    "uuid": 15291304824086870438
+                    "uuid": 620206487159760917
                 }
             }
         ],
@@ -171,20 +112,21 @@
             7,
             {
                 "meshAssetID": {
-                    "uuid": 16919641721678634238
+                    "uuid": 3499349723140706076
                 },
                 "textureAssetID": {
-                    "uuid": 15291304824086870438
+                    "uuid": 620206487159760917
                 }
             }
         ]
     ],
+    "PointLights": null,
     "Rigidbodies": null,
     "Scripts": [
         [
             1,
             {
-                "dir": "C:\\Projects\\PuffinProject\\content\\scripts\\Example.pscript",
+                "dir": "D:\\Projects\\PuffinProject\\content\\scripts\\Example.pscript",
                 "name": "ExampleScript",
                 "serializedData": {
                     "boolProperties": {},
@@ -201,6 +143,71 @@
                     "uint64Properties": {},
                     "uint8Properties": {}
                 }
+            }
+        ]
+    ],
+    "Shadowcasters": [
+        [
+            4,
+            {
+                "shadowmapHeight": 2048,
+                "shadowmapWidth": 2048
+            }
+        ]
+    ],
+    "SpotLights": [
+        [
+            4,
+            {
+                "ambientColor": {
+                    "x": 0.10000000149011612,
+                    "y": 0.10000000149011612,
+                    "z": 0.10000000149011612
+                },
+                "constantAttenuation": 1.0,
+                "diffuseColor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "direction": {
+                    "x": 1.0,
+                    "y": -1.0,
+                    "z": 0.0
+                },
+                "innerCutoffAngle": 12.5,
+                "linearAttenuation": 0.09000000357627869,
+                "outerCutoffAngle": 17.5,
+                "quadraticAttenuation": 0.03200000151991844,
+                "shininess": 16,
+                "specularStrength": 0.5
+            }
+        ],
+        [
+            7,
+            {
+                "ambientColor": {
+                    "x": 0.10000000149011612,
+                    "y": 0.10000000149011612,
+                    "z": 0.10000000149011612
+                },
+                "constantAttenuation": 1.0,
+                "diffuseColor": {
+                    "x": 0.25,
+                    "y": 0.25,
+                    "z": 1.0
+                },
+                "direction": {
+                    "x": -1.0,
+                    "y": -1.0,
+                    "z": 0.0
+                },
+                "innerCutoffAngle": 12.5,
+                "linearAttenuation": 0.09000000357627869,
+                "outerCutoffAngle": 17.5,
+                "quadraticAttenuation": 0.03200000151991844,
+                "shininess": 16,
+                "specularStrength": 0.5
             }
         ]
     ],

@@ -5,11 +5,10 @@ layout(set = 0, binding = 2) uniform sampler2D samplerColor[];
 layout(set = 0, binding = 3) uniform sampler2D samplerNormalMap[];
 
 layout(location = 0) in vec4 fragWorldPos;
-layout(location = 1) in vec3 fragColor;
-layout(location = 2) in vec3 fragNormal;
-layout(location = 3) in vec3 fragTangent;
-layout(location = 4) in vec2 fragUV;
-layout(location = 5) flat in int fragInstance;
+layout(location = 1) in vec3 fragNormal;
+layout(location = 2) in vec3 fragTangent;
+layout(location = 3) in vec2 fragUV;
+layout(location = 4) flat in int fragInstance;
 
 layout(location = 0) out vec4 outPosition;
 layout(location = 1) out vec4 outNormal;

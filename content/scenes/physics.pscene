@@ -33,6 +33,30 @@
             }
         ]
     ],
+    "DirectionalLights": [
+        [
+            1,
+            {
+                "ambientColor": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "z": 0.5
+                },
+                "diffuseColor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "direction": {
+                    "x": 1.0,
+                    "y": -1.0,
+                    "z": 0.0
+                },
+                "shininess": 16,
+                "specularStrength": 0.5
+            }
+        ]
+    ],
     "Entities": [
         1,
         2,
@@ -57,46 +81,15 @@
             "Floor"
         ]
     ],
-    "Lights": [
-        [
-            1,
-            {
-                "ambientColor": {
-                    "x": 0.5,
-                    "y": 0.5,
-                    "z": 0.5
-                },
-                "bFlagCastShadows": false,
-                "constantAttenuation": 1.0,
-                "diffuseColor": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "direction": {
-                    "x": 1.0,
-                    "y": -1.0,
-                    "z": 0.0
-                },
-                "innerCutoffAngle": 12.5,
-                "linearAttenuation": 0.09000000357627869,
-                "outerCutoffAngle": 17.5,
-                "quadraticAttenuation": 0.03200000151991844,
-                "shininess": 16,
-                "specularStrength": 0.5,
-                "type": "Directional"
-            }
-        ]
-    ],
     "Meshes": [
         [
             2,
             {
                 "meshAssetID": {
-                    "uuid": 16919641721678634238
+                    "uuid": 3499349723140706076
                 },
                 "textureAssetID": {
-                    "uuid": 15291304824086870438
+                    "uuid": 620206487159760917
                 }
             }
         ],
@@ -104,10 +97,10 @@
             3,
             {
                 "meshAssetID": {
-                    "uuid": 9388375939549436770
+                    "uuid": 7461563914104352456
                 },
                 "textureAssetID": {
-                    "uuid": 15291304824086870438
+                    "uuid": 620206487159760917
                 }
             }
         ],
@@ -115,14 +108,15 @@
             4,
             {
                 "meshAssetID": {
-                    "uuid": 16919641721678634238
+                    "uuid": 3499349723140706076
                 },
                 "textureAssetID": {
-                    "uuid": 15291304824086870438
+                    "uuid": 620206487159760917
                 }
             }
         ]
     ],
+    "PointLights": null,
     "Rigidbodies": [
         [
             2,
@@ -195,7 +189,7 @@
         [
             2,
             {
-                "dir": "C:\\Projects\\PuffinProject\\content\\scripts\\Physics.pscript",
+                "dir": "D:\\Projects\\PuffinProject\\content\\scripts\\Physics.pscript",
                 "name": "PhysicsScript",
                 "serializedData": {
                     "boolProperties": {},
@@ -213,6 +207,8 @@
             }
         ]
     ],
+    "Shadowcasters": null,
+    "SpotLights": null,
     "Transforms": [
         [
             1,
