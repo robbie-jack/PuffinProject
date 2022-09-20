@@ -8,9 +8,9 @@
         ],
         [
             {
-                "uuid": 7461563914104352456
+                "uuid": 3499349723140706076
             },
-            "meshes\\sphere.pstaticmesh"
+            "meshes\\cube.pstaticmesh"
         ],
         [
             {
@@ -20,9 +20,9 @@
         ],
         [
             {
-                "uuid": 3499349723140706076
+                "uuid": 7461563914104352456
             },
-            "meshes\\cube.pstaticmesh"
+            "meshes\\sphere.pstaticmesh"
         ],
         [
             {
@@ -58,7 +58,7 @@
         ],
         [
             {
-                "uuid": 7461563914104352456
+                "uuid": 3499349723140706076
             },
             "StaticMesh"
         ],
@@ -70,7 +70,7 @@
         ],
         [
             {
-                "uuid": 3499349723140706076
+                "uuid": 7461563914104352456
             },
             "StaticMesh"
         ],
