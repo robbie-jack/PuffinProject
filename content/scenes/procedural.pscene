@@ -1,0 +1,89 @@
+{
+    "Entities": [
+        {
+            "uuid": 14036352827579867880
+        }
+    ],
+    "EntityNames": [
+        [
+            {
+                "uuid": 14036352827579867880
+            },
+            "Light"
+        ]
+    ],
+    "struct Puffin::Physics::Box2DBoxComponent": null,
+    "struct Puffin::Physics::Box2DCircleComponent": null,
+    "struct Puffin::Physics::Box2DRigidbodyComponent": null,
+    "struct Puffin::Procedural::ProceduralPlaneComponent": null,
+    "struct Puffin::Rendering::CameraComponent": null,
+    "struct Puffin::Rendering::DirectionalLightComponent": [
+        [
+            {
+                "uuid": 14036352827579867880
+            },
+            {
+                "ambientColor": {
+                    "x": 0.10000000149011612,
+                    "y": 0.10000000149011612,
+                    "z": 0.10000000149011612
+                },
+                "diffuseColor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "direction": {
+                    "x": 0.5,
+                    "y": -0.5,
+                    "z": 0.0
+                },
+                "shininess": 16,
+                "specularStrength": 0.5
+            }
+        ]
+    ],
+    "struct Puffin::Rendering::MeshComponent": [
+        [
+            {
+                "uuid": 14036352827579867880
+            },
+            {
+                "meshAssetID": {
+                    "uuid": 3499349723140706076
+                },
+                "textureAssetID": {
+                    "uuid": 620206487159760917
+                }
+            }
+        ]
+    ],
+    "struct Puffin::Rendering::PointLightComponent": null,
+    "struct Puffin::Rendering::ShadowCasterComponent": null,
+    "struct Puffin::Rendering::SpotLightComponent": null,
+    "struct Puffin::Scripting::AngelScriptComponent": null,
+    "struct Puffin::TransformComponent": [
+        [
+            {
+                "uuid": 14036352827579867880
+            },
+            {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 0.25,
+                    "y": 0.25,
+                    "z": 0.25
+                }
+            }
+        ]
+    ]
+}
