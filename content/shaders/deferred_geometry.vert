@@ -5,7 +5,7 @@ layout(set = 0, binding = 0) uniform CameraData
 	mat4 viewProj;
 } camera;
 
-struct ObjectUBO
+struct ObjectData
 {
 	mat4 model;
 	mat4 inv_model;
@@ -13,8 +13,18 @@ struct ObjectUBO
 
 layout(std140, set = 0, binding = 1) readonly buffer ObjectBuffer
 {
-	ObjectUBO objects[];
+	ObjectData objects[];
 } objectBuffer;
+
+struct InstanceData
+{
+	int objectOffset;
+};
+
+layout(std140, set = 0, binding = 2) readonly buffer InstanceBuffer
+{
+	InstanceData instances[];
+} instanceBuffer;
 
 layout(location = 0) in vec3 inPos;
 layout(location = 1) in vec3 inNormal;
@@ -29,7 +39,7 @@ layout(location = 4) flat out int fragInstance;
 
 void main()
 {
-	int index = gl_BaseInstance + gl_InstanceIndex;
+	int index = instanceBuffer.instances[gl_BaseInstance].objectOffset + gl_InstanceIndex;
 	mat4 modelMatrix = objectBuffer.objects[index].model;
 	mat4 modelMatrixInverse = objectBuffer.objects[index].inv_model;
 	mat4 viewProjMatrix = camera.viewProj;

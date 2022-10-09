@@ -1,26 +1,34 @@
 {
     "Entities": [
         {
-            "uuid": 14036352827579867880
+            "uuid": 82122335616630327
+        },
+        {
+            "uuid": 8137175658066744745
         }
     ],
     "EntityNames": [
         [
             {
-                "uuid": 14036352827579867880
+                "uuid": 82122335616630327
             },
             "Light"
+        ],
+        [
+            {
+                "uuid": 8137175658066744745
+            },
+            "Plane"
         ]
     ],
     "struct Puffin::Physics::Box2DBoxComponent": null,
     "struct Puffin::Physics::Box2DCircleComponent": null,
     "struct Puffin::Physics::Box2DRigidbodyComponent": null,
-    "struct Puffin::Procedural::ProceduralPlaneComponent": null,
     "struct Puffin::Rendering::CameraComponent": null,
     "struct Puffin::Rendering::DirectionalLightComponent": [
         [
             {
-                "uuid": 14036352827579867880
+                "uuid": 82122335616630327
             },
             {
                 "ambientColor": {
@@ -46,7 +54,7 @@
     "struct Puffin::Rendering::MeshComponent": [
         [
             {
-                "uuid": 14036352827579867880
+                "uuid": 82122335616630327
             },
             {
                 "meshAssetID": {
@@ -59,13 +67,30 @@
         ]
     ],
     "struct Puffin::Rendering::PointLightComponent": null,
+    "struct Puffin::Rendering::Procedural::ProceduralPlaneComponent": [
+        [
+            {
+                "uuid": 8137175658066744745
+            },
+            {
+                "halfSize": {
+                    "x": 5.0,
+                    "y": 5.0
+                },
+                "numQuads": {
+                    "x": 5,
+                    "y": 5
+                }
+            }
+        ]
+    ],
     "struct Puffin::Rendering::ShadowCasterComponent": null,
     "struct Puffin::Rendering::SpotLightComponent": null,
     "struct Puffin::Scripting::AngelScriptComponent": null,
     "struct Puffin::TransformComponent": [
         [
             {
-                "uuid": 14036352827579867880
+                "uuid": 82122335616630327
             },
             {
                 "position": {
@@ -82,6 +107,28 @@
                     "x": 0.25,
                     "y": 0.25,
                     "z": 0.25
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 8137175658066744745
+            },
+            {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
                 }
             }
         ]

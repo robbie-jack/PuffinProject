@@ -1,8 +1,8 @@
 #version 460
 #extension GL_EXT_nonuniform_qualifier : enable
 
-layout(set = 0, binding = 2) uniform sampler2D samplerColor[];
-layout(set = 0, binding = 3) uniform sampler2D samplerNormalMap[];
+layout(set = 0, binding = 3) uniform sampler2D samplerColor[];
+layout(set = 0, binding = 4) uniform sampler2D samplerNormalMap[];
 
 layout(location = 0) in vec4 fragWorldPos;
 layout(location = 1) in vec3 fragNormal;
