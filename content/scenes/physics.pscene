@@ -1,39 +1,28 @@
 {
     "Entities": [
         {
-            "uuid": 8604764284492108957
+            "id": {
+                "uuid": 937858766612246121
+            },
+            "name": "Light"
         },
         {
-            "uuid": 12505844101662587966
+            "id": {
+                "uuid": 6339383126669700779
+            },
+            "name": "Floor"
         },
         {
-            "uuid": 13792762100508548094
+            "id": {
+                "uuid": 12332158053744219216
+            },
+            "name": "Box"
         }
-    ],
-    "EntityNames": [
-        [
-            {
-                "uuid": 8604764284492108957
-            },
-            "Light"
-        ],
-        [
-            {
-                "uuid": 12505844101662587966
-            },
-            "Box"
-        ],
-        [
-            {
-                "uuid": 13792762100508548094
-            },
-            "Floor"
-        ]
     ],
     "struct Puffin::Physics::BoxComponent2D": [
         [
             {
-                "uuid": 12505844101662587966
+                "uuid": 6339383126669700779
             },
             {
                 "centreOfMass": {
@@ -48,7 +37,7 @@
         ],
         [
             {
-                "uuid": 13792762100508548094
+                "uuid": 12332158053744219216
             },
             {
                 "centreOfMass": {
@@ -65,7 +54,7 @@
     "struct Puffin::Physics::CircleComponent2D": [
         [
             {
-                "uuid": 13792762100508548094
+                "uuid": 6339383126669700779
             },
             {
                 "centreOfMass": {
@@ -79,33 +68,29 @@
     "struct Puffin::Physics::RigidbodyComponent2D": [
         [
             {
-                "uuid": 12505844101662587966
-            },
-            {
-                "bodyType": "Dynamic",
-                "elasticity": 0.699999988079071,
-                "invMass": 1.0
-            }
-        ],
-        [
-            {
-                "uuid": 13792762100508548094
+                "uuid": 6339383126669700779
             },
             {
                 "bodyType": "Static",
                 "elasticity": 1.0,
                 "invMass": 0.0
             }
+        ],
+        [
+            {
+                "uuid": 12332158053744219216
+            },
+            {
+                "bodyType": "Dynamic",
+                "elasticity": 0.699999988079071,
+                "invMass": 1.0
+            }
         ]
     ],
-    "struct Puffin::Procedural::IcoSphereComponent": null,
-    "struct Puffin::Procedural::PlaneComponent": null,
-    "struct Puffin::Procedural::TerrainComponent": null,
-    "struct Puffin::Rendering::CameraComponent": null,
     "struct Puffin::Rendering::DirectionalLightComponent": [
         [
             {
-                "uuid": 8604764284492108957
+                "uuid": 937858766612246121
             },
             {
                 "ambientColor": {
@@ -131,7 +116,7 @@
     "struct Puffin::Rendering::MeshComponent": [
         [
             {
-                "uuid": 12505844101662587966
+                "uuid": 6339383126669700779
             },
             {
                 "meshAssetID": {
@@ -144,7 +129,7 @@
         ],
         [
             {
-                "uuid": 13792762100508548094
+                "uuid": 12332158053744219216
             },
             {
                 "meshAssetID": {
@@ -156,14 +141,10 @@
             }
         ]
     ],
-    "struct Puffin::Rendering::PointLightComponent": null,
-    "struct Puffin::Rendering::ProceduralMeshComponent": null,
-    "struct Puffin::Rendering::ShadowCasterComponent": null,
-    "struct Puffin::Rendering::SpotLightComponent": null,
     "struct Puffin::Scripting::AngelScriptComponent": [
         [
             {
-                "uuid": 12505844101662587966
+                "uuid": 12332158053744219216
             },
             {
                 "dir": "D:\\Projects\\PuffinProject\\content\\scripts\\Physics.pscript",
@@ -187,7 +168,7 @@
     "struct Puffin::TransformComponent": [
         [
             {
-                "uuid": 8604764284492108957
+                "uuid": 937858766612246121
             },
             {
                 "position": {
@@ -209,29 +190,7 @@
         ],
         [
             {
-                "uuid": 12505844101662587966
-            },
-            {
-                "position": {
-                    "x": -2.0,
-                    "y": 10.0,
-                    "z": 0.0
-                },
-                "rotation": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                }
-            }
-        ],
-        [
-            {
-                "uuid": 13792762100508548094
+                "uuid": 6339383126669700779
             },
             {
                 "position": {
@@ -246,6 +205,28 @@
                 },
                 "scale": {
                     "x": 5.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 12332158053744219216
+            },
+            {
+                "position": {
+                    "x": -2.0,
+                    "y": 10.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.0,
                     "y": 1.0,
                     "z": 1.0
                 }
