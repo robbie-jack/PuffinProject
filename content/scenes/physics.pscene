@@ -1,41 +1,112 @@
 {
-    "Boxes": [
+    "Entities": [
+        {
+            "uuid": 8604764284492108957
+        },
+        {
+            "uuid": 12505844101662587966
+        },
+        {
+            "uuid": 13792762100508548094
+        }
+    ],
+    "EntityNames": [
         [
-            2,
             {
-                "data": {
-                    "halfExtent": {
-                        "x": 1.0,
-                        "y": 1.0
-                    }
+                "uuid": 8604764284492108957
+            },
+            "Light"
+        ],
+        [
+            {
+                "uuid": 12505844101662587966
+            },
+            "Box"
+        ],
+        [
+            {
+                "uuid": 13792762100508548094
+            },
+            "Floor"
+        ]
+    ],
+    "struct Puffin::Physics::BoxComponent2D": [
+        [
+            {
+                "uuid": 12505844101662587966
+            },
+            {
+                "centreOfMass": {
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                "halfExtent": {
+                    "x": 5.0,
+                    "y": 1.0
                 }
             }
         ],
         [
-            4,
             {
-                "data": {
-                    "halfExtent": {
-                        "x": 5.0,
-                        "y": 1.0
-                    }
+                "uuid": 13792762100508548094
+            },
+            {
+                "centreOfMass": {
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                "halfExtent": {
+                    "x": 5.0,
+                    "y": 1.0
                 }
             }
         ]
     ],
-    "Circles": [
+    "struct Puffin::Physics::CircleComponent2D": [
         [
-            3,
             {
-                "data": {
-                    "radius": 1.0
-                }
+                "uuid": 13792762100508548094
+            },
+            {
+                "centreOfMass": {
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                "radius": 0.5
             }
         ]
     ],
-    "DirectionalLights": [
+    "struct Puffin::Physics::RigidbodyComponent2D": [
         [
-            1,
+            {
+                "uuid": 12505844101662587966
+            },
+            {
+                "bodyType": "Dynamic",
+                "elasticity": 0.699999988079071,
+                "invMass": 1.0
+            }
+        ],
+        [
+            {
+                "uuid": 13792762100508548094
+            },
+            {
+                "bodyType": "Static",
+                "elasticity": 1.0,
+                "invMass": 0.0
+            }
+        ]
+    ],
+    "struct Puffin::Procedural::IcoSphereComponent": null,
+    "struct Puffin::Procedural::PlaneComponent": null,
+    "struct Puffin::Procedural::TerrainComponent": null,
+    "struct Puffin::Rendering::CameraComponent": null,
+    "struct Puffin::Rendering::DirectionalLightComponent": [
+        [
+            {
+                "uuid": 8604764284492108957
+            },
             {
                 "ambientColor": {
                     "x": 0.5,
@@ -57,33 +128,11 @@
             }
         ]
     ],
-    "Entities": [
-        1,
-        2,
-        3,
-        4
-    ],
-    "EntityNames": [
+    "struct Puffin::Rendering::MeshComponent": [
         [
-            1,
-            "Light"
-        ],
-        [
-            2,
-            "Box"
-        ],
-        [
-            3,
-            "Circle"
-        ],
-        [
-            4,
-            "Floor"
-        ]
-    ],
-    "Meshes": [
-        [
-            2,
+            {
+                "uuid": 12505844101662587966
+            },
             {
                 "meshAssetID": {
                     "uuid": 3499349723140706076
@@ -94,18 +143,9 @@
             }
         ],
         [
-            3,
             {
-                "meshAssetID": {
-                    "uuid": 7461563914104352456
-                },
-                "textureAssetID": {
-                    "uuid": 620206487159760917
-                }
-            }
-        ],
-        [
-            4,
+                "uuid": 13792762100508548094
+            },
             {
                 "meshAssetID": {
                     "uuid": 3499349723140706076
@@ -116,78 +156,15 @@
             }
         ]
     ],
-    "PointLights": null,
-    "Rigidbodies": [
+    "struct Puffin::Rendering::PointLightComponent": null,
+    "struct Puffin::Rendering::ProceduralMeshComponent": null,
+    "struct Puffin::Rendering::ShadowCasterComponent": null,
+    "struct Puffin::Rendering::SpotLightComponent": null,
+    "struct Puffin::Scripting::AngelScriptComponent": [
         [
-            2,
             {
-                "bodyDef": {
-                    "allowSleep": true,
-                    "angularDamping": 0.0,
-                    "awake": true,
-                    "bullet": false,
-                    "enabled": true,
-                    "fixedRotation": false,
-                    "gravityScale": 1.0,
-                    "linearDamping": 0.0,
-                    "type": "dynamic"
-                },
-                "fixtureDef": {
-                    "density": 1.0,
-                    "friction": 0.5,
-                    "restitution": 0.5,
-                    "restitutionThreshold": 1.0
-                }
-            }
-        ],
-        [
-            3,
-            {
-                "bodyDef": {
-                    "allowSleep": true,
-                    "angularDamping": 0.0,
-                    "awake": true,
-                    "bullet": false,
-                    "enabled": true,
-                    "fixedRotation": false,
-                    "gravityScale": 1.0,
-                    "linearDamping": 0.0,
-                    "type": "dynamic"
-                },
-                "fixtureDef": {
-                    "density": 1.0,
-                    "friction": 0.5,
-                    "restitution": 0.5,
-                    "restitutionThreshold": 1.0
-                }
-            }
-        ],
-        [
-            4,
-            {
-                "bodyDef": {
-                    "allowSleep": true,
-                    "angularDamping": 0.0,
-                    "awake": true,
-                    "bullet": false,
-                    "enabled": true,
-                    "fixedRotation": false,
-                    "gravityScale": 1.0,
-                    "linearDamping": 0.0,
-                    "type": "static"
-                },
-                "fixtureDef": {
-                    "density": 1.0,
-                    "friction": 0.5,
-                    "restitution": 0.5,
-                    "restitutionThreshold": 1.0
-                }
-            }
-        ]
-    ],
-    "Scripts": [
-        [
-            2,
+                "uuid": 12505844101662587966
+            },
             {
                 "dir": "D:\\Projects\\PuffinProject\\content\\scripts\\Physics.pscript",
                 "name": "PhysicsScript",
@@ -207,11 +184,11 @@
             }
         ]
     ],
-    "Shadowcasters": null,
-    "SpotLights": null,
-    "Transforms": [
+    "struct Puffin::TransformComponent": [
         [
-            1,
+            {
+                "uuid": 8604764284492108957
+            },
             {
                 "position": {
                     "x": 0.0,
@@ -231,7 +208,9 @@
             }
         ],
         [
-            2,
+            {
+                "uuid": 12505844101662587966
+            },
             {
                 "position": {
                     "x": -2.0,
@@ -251,27 +230,9 @@
             }
         ],
         [
-            3,
             {
-                "position": {
-                    "x": 2.0,
-                    "y": 10.0,
-                    "z": 0.0
-                },
-                "rotation": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                }
-            }
-        ],
-        [
-            4,
+                "uuid": 13792762100508548094
+            },
             {
                 "position": {
                     "x": 0.0,

@@ -1,34 +1,73 @@
 {
     "Entities": [
         {
-            "uuid": 82122335616630327
+            "uuid": 6102231061685280128
         },
         {
-            "uuid": 8137175658066744745
+            "uuid": 11480194931115652427
+        },
+        {
+            "uuid": 14186976531867570538
         }
     ],
     "EntityNames": [
         [
             {
-                "uuid": 82122335616630327
+                "uuid": 11480194931115652427
             },
             "Light"
         ],
         [
             {
-                "uuid": 8137175658066744745
+                "uuid": 6102231061685280128
             },
-            "Plane"
+            "Sphere"
+        ],
+        [
+            {
+                "uuid": 14186976531867570538
+            },
+            "Terrain"
         ]
     ],
     "struct Puffin::Physics::Box2DBoxComponent": null,
     "struct Puffin::Physics::Box2DCircleComponent": null,
     "struct Puffin::Physics::Box2DRigidbodyComponent": null,
+    "struct Puffin::Physics::VelocityComponent": null,
+    "struct Puffin::Procedural::IcoSphereComponent": [
+        [
+            {
+                "uuid": 6102231061685280128
+            },
+            {
+                "radius": 0.5,
+                "subdivisions": 10
+            }
+        ]
+    ],
+    "struct Puffin::Procedural::PlaneComponent": null,
+    "struct Puffin::Procedural::TerrainComponent": [
+        [
+            {
+                "uuid": 14186976531867570538
+            },
+            {
+                "halfSize": {
+                    "x": 50.0,
+                    "y": 50.0
+                },
+                "numQuads": {
+                    "x": 50,
+                    "y": 50
+                }
+            }
+        ]
+    ],
     "struct Puffin::Rendering::CameraComponent": null,
     "struct Puffin::Rendering::DirectionalLightComponent": [
         [
             {
-                "uuid": 82122335616630327
+                "uuid": 11480194931115652427
             },
             {
                 "ambientColor": {
@@ -54,7 +93,7 @@
     "struct Puffin::Rendering::MeshComponent": [
         [
             {
-                "uuid": 82122335616630327
+                "uuid": 11480194931115652427
             },
             {
                 "meshAssetID": {
@@ -67,19 +106,24 @@
         ]
     ],
     "struct Puffin::Rendering::PointLightComponent": null,
-    "struct Puffin::Rendering::Procedural::ProceduralPlaneComponent": [
+    "struct Puffin::Rendering::ProceduralMeshComponent": [
         [
             {
-                "uuid": 8137175658066744745
+                "uuid": 6102231061685280128
             },
             {
-                "halfSize": {
-                    "x": 5.0,
-                    "y": 5.0
-                },
-                "numQuads": {
-                    "x": 5,
-                    "y": 5
+                "textureAssetID": {
+                    "uuid": 620206487159760917
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 14186976531867570538
+            },
+            {
+                "textureAssetID": {
+                    "uuid": 620206487159760917
                 }
             }
         ]
@@ -90,12 +134,34 @@
     "struct Puffin::TransformComponent": [
         [
             {
-                "uuid": 82122335616630327
+                "uuid": 6102231061685280128
             },
             {
                 "position": {
                     "x": 0.0,
+                    "y": 5.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
                     "y": 0.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 11480194931115652427
+            },
+            {
+                "position": {
+                    "x": 0.0,
+                    "y": 10.0,
                     "z": 0.0
                 },
                 "rotation": {
@@ -112,12 +178,12 @@
         ],
         [
             {
-                "uuid": 8137175658066744745
+                "uuid": 14186976531867570538
             },
             {
                 "position": {
                     "x": 0.0,
-                    "y": 0.0,
+                    "y": -10.0,
                     "z": 0.0
                 },
                 "rotation": {

@@ -1,4 +1,4 @@
 {
     "name": "Puffin",
-    "defaultScenePath": "scenes\\procedural.pscene"
+    "defaultScenePath": "scenes\\physics.pscene"
 }
