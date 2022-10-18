@@ -6,7 +6,7 @@ layout(set = 0, binding = 0) uniform UBO
 {
 	vec3 viewPos;
 	int displayDebugTarget;
-} ubo;
+} shadingUBO;
 
 layout(set = 0, binding = 1) uniform sampler2D samplerPosition;
 layout(set = 0, binding = 2) uniform sampler2D samplerNormal;
@@ -106,9 +106,9 @@ void main()
 	vec4 fragAlbedoSpec = texture(samplerAlbedoSpec, fragUV);
 
 	// Render G-Buffer directly to Screen
-	if (ubo.displayDebugTarget > 0)
+	if (shadingUBO.displayDebugTarget > 0)
 	{
-		switch (ubo.displayDebugTarget)
+		switch (shadingUBO.displayDebugTarget)
 		{
 			case 1: 
 				outColor.rgb = fragPos;
@@ -127,7 +127,7 @@ void main()
 		return;
 	}
 
-	vec3 viewDir = normalize(ubo.viewPos - fragPos);
+	vec3 viewDir = normalize(shadingUBO.viewPos - fragPos);
 
 	vec3 result = vec3(0.0, 0.0, 0.0);
 
@@ -157,10 +157,12 @@ void main()
 
 vec3 CalcPointLight(PointLightData light, LightData data, vec3 normal, vec3 viewDir, vec3 fragPos)
 {
-	vec3 lightDir = normalize(light.position - fragPos);
+	vec3 fragToLight = light.position - fragPos;
+
+	vec3 lightDir = normalize(fragToLight);
 	vec3 halfwayDir = normalize(lightDir + viewDir);
 
-	float distance = length(light.position - fragPos);
+	float distance = length(fragToLight);
 	float attenuation = 1.0 / (light.constant + light.linear * distance + light.quadratic * (distance * distance));
 
 	vec3 ambient = data.ambientColor * attenuation;
@@ -190,10 +192,12 @@ vec3 CalcDirLight(DirectionalLightData light, LightData data, vec3 normal, vec3 
 
 vec3 CalcSpotLight(SpotLightData light, LightData data, vec3 normal, vec3 viewDir, vec3 fragPos)
 {
-	vec3 lightDir = normalize(light.position - fragPos);
+	vec3 fragToLight = light.position - fragPos;
+
+	vec3 lightDir = normalize(fragToLight);
 	vec3 halfwayDir = normalize(lightDir + viewDir);
 
-	float distance = length(light.position - fragPos);
+	float distance = length(fragToLight);
 	float attenuation = 1.0 / (light.constant + light.linear * distance + light.quadratic * (distance * distance));
 
 	vec3 ambient = data.ambientColor * attenuation;
