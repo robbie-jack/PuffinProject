@@ -17,6 +17,16 @@ layout(std140, set = 1, binding = 0) readonly buffer ObjectBuffer
 	ObjectData objects[];
 } objectBuffer;
 
+struct InstanceData
+{
+	int objectOffset;
+};
+
+layout(std140, set = 1, binding = 1) readonly buffer InstanceBuffer
+{
+	InstanceData instances[];
+} instanceBuffer;
+
 layout(location = 0) in vec3 inPos;
 layout(location = 1) in vec3 inNormal;
 layout(location = 2) in vec3 inTangent;
@@ -24,7 +34,8 @@ layout(location = 3) in vec2 inUV;
 
 void main()
 {
-	int index = gl_BaseInstance + gl_InstanceIndex;
+	int index = instanceBuffer.instances[gl_BaseInstance].objectOffset + gl_InstanceIndex;
+	
 	mat4 modelMatrix = objectBuffer.objects[index].model;
 
 	gl_Position = light.lightSpaceMatrix * modelMatrix * vec4(inPos, 1.0);

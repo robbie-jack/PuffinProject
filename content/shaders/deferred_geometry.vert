@@ -11,7 +11,7 @@ struct ObjectData
 	mat4 inv_model;
 };
 
-layout(std140, set = 0, binding = 1) readonly buffer ObjectBuffer
+layout(std140, set = 1, binding = 0) readonly buffer ObjectBuffer
 {
 	ObjectData objects[];
 } objectBuffer;
@@ -21,7 +21,7 @@ struct InstanceData
 	int objectOffset;
 };
 
-layout(std140, set = 0, binding = 2) readonly buffer InstanceBuffer
+layout(std140, set = 1, binding = 1) readonly buffer InstanceBuffer
 {
 	InstanceData instances[];
 } instanceBuffer;
