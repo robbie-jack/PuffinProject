@@ -22,5 +22,18 @@ void main()
 	vec3 tnorm = TBN * normalize(texture(samplerNormalMap[fragInstance], fragUV).xyz * 2.0 - vec3(1.0));
 	vec4 tNormal = vec4(tnorm, 1.0);
 
-    outColor = texture(samplerColor[fragInstance], fragUV);
+	// Calculate Lighting
+	vec3 result = vec3(0.0);
+	//vec3 viewDir = normalize(shadingUBO.viewPos - fragPos);
+
+	// Point Lights
+
+	// Directional Lights
+
+	// Spot Lights
+
+	// Set Pixel Color
+    //outColor = texture(samplerColor[fragInstance], fragUV);
+	outColor.rgb = fragWorldPos.rgb;
+	outColor.a = 1.0;
 }

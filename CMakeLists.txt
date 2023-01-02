@@ -21,7 +21,7 @@ file(GLOB_RECURSE GLSL_SOURCE_FILES
 foreach(GLSL ${GLSL_SOURCE_FILES})
   message(STATUS "BUILDING SHADER")
   get_filename_component(FILE_NAME ${GLSL} NAME_WE)
-  set(SPIRV "${PROJECT_SOURCE_DIR}/content/shaders/${FILE_NAME}_frag.spv")
+  set(SPIRV "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/${FILE_NAME}_fs.spv")
   message(STATUS ${GLSL})
   add_custom_command(
     OUTPUT ${SPIRV}
@@ -37,7 +37,7 @@ file(GLOB_RECURSE GLSL_SOURCE_FILES
 foreach(GLSL ${GLSL_SOURCE_FILES})
   message(STATUS "BUILDING SHADER")
   get_filename_component(FILE_NAME ${GLSL} NAME_WE)
-  set(SPIRV "${PROJECT_SOURCE_DIR}/content/shaders/${FILE_NAME}_vert.spv")
+  set(SPIRV "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/${FILE_NAME}_vs.spv")
   message(STATUS ${GLSL})
   add_custom_command(
     OUTPUT ${SPIRV}
@@ -53,7 +53,7 @@ file(GLOB_RECURSE GLSL_SOURCE_FILES
 foreach(GLSL ${GLSL_SOURCE_FILES})
   message(STATUS "BUILDING SHADER")
   get_filename_component(FILE_NAME ${GLSL} NAME_WE)
-  set(SPIRV "${PROJECT_SOURCE_DIR}/content/shaders/${FILE_NAME}_comp.spv")
+  set(SPIRV "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/${FILE_NAME}_cs.spv")
   message(STATUS ${GLSL})
   add_custom_command(
     OUTPUT ${SPIRV}
