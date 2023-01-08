@@ -26,12 +26,6 @@
         ],
         [
             {
-                "uuid": 8535634140398567018
-            },
-            "meshes\\Sphere.pstaticmesh"
-        ],
-        [
-            {
                 "uuid": 7777109360633946356
             },
             "textures\\chalet.ptexture"
@@ -76,21 +70,15 @@
         ],
         [
             {
-                "uuid": 8535634140398567018
-            },
-            "StaticMesh"
-        ],
-        [
-            {
                 "uuid": 7777109360633946356
             },
-            "StaticMesh"
+            "Texture"
         ],
         [
             {
                 "uuid": 620206487159760917
             },
-            "StaticMesh"
+            "Texture"
         ],
         [
             {
