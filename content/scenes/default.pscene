@@ -2,64 +2,95 @@
     "Entities": [
         {
             "id": {
-                "uuid": 10520976868843667288
+                "uuid": 88213951202256919
             },
-            "name": "Sphere"
+            "name": "Spot Light"
         },
         {
             "id": {
-                "uuid": 13205280731417749841
-            },
-            "name": "Light 2"
-        },
-        {
-            "id": {
-                "uuid": 13777102337241989300
-            },
-            "name": "Plane"
-        },
-        {
-            "id": {
-                "uuid": 14291581254131122218
+                "uuid": 349574708495994357
             },
             "name": "House"
         },
         {
             "id": {
-                "uuid": 15419750189273849873
+                "uuid": 1704314906165816045
             },
-            "name": "Falling Cube"
+            "name": "Sphere"
         },
         {
             "id": {
-                "uuid": 16506473880157496669
+                "uuid": 4043666439093312427
             },
             "name": "Static Cube"
         },
         {
             "id": {
-                "uuid": 17227745359167158441
+                "uuid": 5389077661628904985
             },
-            "name": "Light"
+            "name": "Dir Light"
+        },
+        {
+            "id": {
+                "uuid": 12638275000115468599
+            },
+            "name": "Plane"
+        },
+        {
+            "id": {
+                "uuid": 15813876993000959726
+            },
+            "name": "Falling Cube"
         }
+    ],
+    "struct Puffin::Rendering::LightComponent": [
+        [
+            {
+                "uuid": 88213951202256919
+            },
+            {
+                "ambientIntensity": 0.05000000074505806,
+                "color": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 1.0
+                },
+                "constantAttenuation": 1.0,
+                "innerCutoffAngle": 30.0,
+                "linearAttenuation": 0.09000000357627869,
+                "outerCutoffAngle": 45.0,
+                "quadraticAttenuation": 0.03200000151991844,
+                "specularExponent": 64,
+                "specularIntensity": 1.0,
+                "type": "Spot"
+            }
+        ],
+        [
+            {
+                "uuid": 5389077661628904985
+            },
+            {
+                "ambientIntensity": 0.05000000074505806,
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "constantAttenuation": 1.0,
+                "innerCutoffAngle": 30.0,
+                "linearAttenuation": 0.09000000357627869,
+                "outerCutoffAngle": 45.0,
+                "quadraticAttenuation": 0.03200000151991844,
+                "specularExponent": 64,
+                "specularIntensity": 1.0,
+                "type": "Directional"
+            }
+        ]
     ],
     "struct Puffin::Rendering::MeshComponent": [
         [
             {
-                "uuid": 10520976868843667288
-            },
-            {
-                "meshAssetID": {
-                    "uuid": 7461563914104352456
-                },
-                "textureAssetID": {
-                    "uuid": 620206487159760917
-                }
-            }
-        ],
-        [
-            {
-                "uuid": 13205280731417749841
+                "uuid": 88213951202256919
             },
             {
                 "meshAssetID": {
@@ -72,20 +103,7 @@
         ],
         [
             {
-                "uuid": 13777102337241989300
-            },
-            {
-                "meshAssetID": {
-                    "uuid": 3499349723140706076
-                },
-                "textureAssetID": {
-                    "uuid": 620206487159760917
-                }
-            }
-        ],
-        [
-            {
-                "uuid": 14291581254131122218
+                "uuid": 349574708495994357
             },
             {
                 "meshAssetID": {
@@ -98,7 +116,20 @@
         ],
         [
             {
-                "uuid": 15419750189273849873
+                "uuid": 1704314906165816045
+            },
+            {
+                "meshAssetID": {
+                    "uuid": 7461563914104352456
+                },
+                "textureAssetID": {
+                    "uuid": 620206487159760917
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 4043666439093312427
             },
             {
                 "meshAssetID": {
@@ -111,7 +142,7 @@
         ],
         [
             {
-                "uuid": 16506473880157496669
+                "uuid": 5389077661628904985
             },
             {
                 "meshAssetID": {
@@ -124,7 +155,7 @@
         ],
         [
             {
-                "uuid": 17227745359167158441
+                "uuid": 12638275000115468599
             },
             {
                 "meshAssetID": {
@@ -134,72 +165,25 @@
                     "uuid": 620206487159760917
                 }
             }
-        ]
-    ],
-    "struct Puffin::Rendering::SpotLightComponent": [
-        [
-            {
-                "uuid": 13205280731417749841
-            },
-            {
-                "ambientColor": {
-                    "x": 0.10000000149011612,
-                    "y": 0.10000000149011612,
-                    "z": 0.10000000149011612
-                },
-                "constantAttenuation": 1.0,
-                "diffuseColor": {
-                    "x": 0.25,
-                    "y": 0.25,
-                    "z": 1.0
-                },
-                "direction": {
-                    "x": -1.0,
-                    "y": -1.0,
-                    "z": 0.0
-                },
-                "innerCutoffAngle": 30.0,
-                "linearAttenuation": 0.09000000357627869,
-                "outerCutoffAngle": 45.0,
-                "quadraticAttenuation": 0.03200000151991844,
-                "shininess": 16,
-                "specularStrength": 0.5
-            }
         ],
         [
             {
-                "uuid": 17227745359167158441
+                "uuid": 15813876993000959726
             },
             {
-                "ambientColor": {
-                    "x": 0.10000000149011612,
-                    "y": 0.10000000149011612,
-                    "z": 0.10000000149011612
+                "meshAssetID": {
+                    "uuid": 3499349723140706076
                 },
-                "constantAttenuation": 1.0,
-                "diffuseColor": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "direction": {
-                    "x": 0.20000000298023224,
-                    "y": -0.800000011920929,
-                    "z": 0.0
-                },
-                "innerCutoffAngle": 30.0,
-                "linearAttenuation": 0.09000000357627869,
-                "outerCutoffAngle": 45.0,
-                "quadraticAttenuation": 0.03200000151991844,
-                "shininess": 16,
-                "specularStrength": 0.5
+                "textureAssetID": {
+                    "uuid": 620206487159760917
+                }
             }
         ]
     ],
     "struct Puffin::Scripting::AngelScriptComponent": [
         [
             {
-                "uuid": 14291581254131122218
+                "uuid": 349574708495994357
             },
             {
                 "dir": "C:\\Projects\\PuffinProject\\content\\scripts\\Example.pscript",
@@ -209,9 +193,7 @@
                     "doubleProperties": {},
                     "floatProperties": {},
                     "int16Properties": {},
-                    "int32Properties": {
-                        "startingTime": 0
-                    },
+                    "int32Properties": {},
                     "int64Properties": {},
                     "int8Properties": {},
                     "uint16Properties": {},
@@ -225,15 +207,39 @@
     "struct Puffin::TransformComponent": [
         [
             {
-                "uuid": 10520976868843667288
+                "uuid": 88213951202256919
             },
             {
                 "position": {
-                    "x": -1.0,
+                    "x": 5.0,
                     "y": 0.0,
                     "z": 0.0
                 },
                 "rotation": {
+                    "w": 1.0,
+                    "x": -0.5,
+                    "y": -0.5,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 0.25,
+                    "y": 0.25,
+                    "z": 0.25
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 349574708495994357
+            },
+            {
+                "position": {
+                    "x": 2.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "w": 1.0,
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
@@ -247,17 +253,64 @@
         ],
         [
             {
-                "uuid": 13205280731417749841
+                "uuid": 1704314906165816045
             },
             {
                 "position": {
-                    "x": 5.0,
+                    "x": -1.0,
                     "y": 0.0,
                     "z": 0.0
                 },
                 "rotation": {
+                    "w": 1.0,
                     "x": 0.0,
                     "y": 0.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 4043666439093312427
+            },
+            {
+                "position": {
+                    "x": -1.75,
+                    "y": -5.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "w": 1.0,
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 5389077661628904985
+            },
+            {
+                "position": {
+                    "x": -5.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "w": 1.0,
+                    "x": 0.5,
+                    "y": -0.5,
                     "z": 0.0
                 },
                 "scale": {
@@ -269,7 +322,7 @@
         ],
         [
             {
-                "uuid": 13777102337241989300
+                "uuid": 12638275000115468599
             },
             {
                 "position": {
@@ -278,6 +331,7 @@
                     "z": 0.0
                 },
                 "rotation": {
+                    "w": 1.0,
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
@@ -291,15 +345,16 @@
         ],
         [
             {
-                "uuid": 14291581254131122218
+                "uuid": 15813876993000959726
             },
             {
                 "position": {
-                    "x": 2.0,
+                    "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
                 },
                 "rotation": {
+                    "w": 1.0,
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
@@ -308,72 +363,6 @@
                     "x": 1.0,
                     "y": 1.0,
                     "z": 1.0
-                }
-            }
-        ],
-        [
-            {
-                "uuid": 15419750189273849873
-            },
-            {
-                "position": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "rotation": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                }
-            }
-        ],
-        [
-            {
-                "uuid": 16506473880157496669
-            },
-            {
-                "position": {
-                    "x": -1.75,
-                    "y": -5.0,
-                    "z": 0.0
-                },
-                "rotation": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                }
-            }
-        ],
-        [
-            {
-                "uuid": 17227745359167158441
-            },
-            {
-                "position": {
-                    "x": -5.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "rotation": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "scale": {
-                    "x": 0.25,
-                    "y": 0.25,
-                    "z": 0.25
                 }
             }
         ]
