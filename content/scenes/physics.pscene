@@ -2,27 +2,81 @@
     "Entities": [
         {
             "id": {
-                "uuid": 937858766612246121
+                "uuid": 4069300997860087852
+            },
+            "name": "Box 8"
+        },
+        {
+            "id": {
+                "uuid": 4679715195811628288
+            },
+            "name": "Box 9"
+        },
+        {
+            "id": {
+                "uuid": 6309612528654733356
             },
             "name": "Light"
         },
         {
             "id": {
-                "uuid": 6339383126669700779
+                "uuid": 6866536511243900453
+            },
+            "name": "Box 7"
+        },
+        {
+            "id": {
+                "uuid": 9010263353077812961
+            },
+            "name": "Box 10"
+        },
+        {
+            "id": {
+                "uuid": 9958607007005993438
             },
             "name": "Floor"
         },
         {
             "id": {
-                "uuid": 12332158053744219216
+                "uuid": 10909236309509593708
             },
-            "name": "Box"
+            "name": "Box 5"
+        },
+        {
+            "id": {
+                "uuid": 11463954824678002935
+            },
+            "name": "Box 1"
+        },
+        {
+            "id": {
+                "uuid": 12903978041531049953
+            },
+            "name": "Box 2"
+        },
+        {
+            "id": {
+                "uuid": 13339144924676127758
+            },
+            "name": "Box 6"
+        },
+        {
+            "id": {
+                "uuid": 14015698840985401523
+            },
+            "name": "Box 3"
+        },
+        {
+            "id": {
+                "uuid": 17651845717313253527
+            },
+            "name": "Box 4"
         }
     ],
     "struct Puffin::Physics::BoxComponent2D": [
         [
             {
-                "uuid": 6339383126669700779
+                "uuid": 4069300997860087852
             },
             {
                 "centreOfMass": {
@@ -30,14 +84,14 @@
                     "y": 0.0
                 },
                 "halfExtent": {
-                    "x": 5.0,
+                    "x": 1.0,
                     "y": 1.0
                 }
             }
         ],
         [
             {
-                "uuid": 12332158053744219216
+                "uuid": 4679715195811628288
             },
             {
                 "centreOfMass": {
@@ -45,30 +99,191 @@
                     "y": 0.0
                 },
                 "halfExtent": {
-                    "x": 5.0,
+                    "x": 1.0,
                     "y": 1.0
                 }
             }
-        ]
-    ],
-    "struct Puffin::Physics::CircleComponent2D": [
+        ],
         [
             {
-                "uuid": 6339383126669700779
+                "uuid": 6866536511243900453
             },
             {
                 "centreOfMass": {
                     "x": 0.0,
                     "y": 0.0
                 },
-                "radius": 0.5
+                "halfExtent": {
+                    "x": 1.0,
+                    "y": 1.0
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 9010263353077812961
+            },
+            {
+                "centreOfMass": {
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                "halfExtent": {
+                    "x": 1.0,
+                    "y": 1.0
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 9958607007005993438
+            },
+            {
+                "centreOfMass": {
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                "halfExtent": {
+                    "x": 250.0,
+                    "y": 1.0
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 10909236309509593708
+            },
+            {
+                "centreOfMass": {
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                "halfExtent": {
+                    "x": 1.0,
+                    "y": 1.0
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 11463954824678002935
+            },
+            {
+                "centreOfMass": {
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                "halfExtent": {
+                    "x": 1.0,
+                    "y": 1.0
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 12903978041531049953
+            },
+            {
+                "centreOfMass": {
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                "halfExtent": {
+                    "x": 1.0,
+                    "y": 1.0
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 13339144924676127758
+            },
+            {
+                "centreOfMass": {
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                "halfExtent": {
+                    "x": 1.0,
+                    "y": 1.0
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 14015698840985401523
+            },
+            {
+                "centreOfMass": {
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                "halfExtent": {
+                    "x": 1.0,
+                    "y": 1.0
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 17651845717313253527
+            },
+            {
+                "centreOfMass": {
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                "halfExtent": {
+                    "x": 1.0,
+                    "y": 1.0
+                }
             }
         ]
     ],
     "struct Puffin::Physics::RigidbodyComponent2D": [
         [
             {
-                "uuid": 6339383126669700779
+                "uuid": 4069300997860087852
+            },
+            {
+                "bodyType": "Dynamic",
+                "elasticity": 1.0,
+                "invMass": 1.0
+            }
+        ],
+        [
+            {
+                "uuid": 4679715195811628288
+            },
+            {
+                "bodyType": "Dynamic",
+                "elasticity": 1.0,
+                "invMass": 1.0
+            }
+        ],
+        [
+            {
+                "uuid": 6866536511243900453
+            },
+            {
+                "bodyType": "Dynamic",
+                "elasticity": 1.0,
+                "invMass": 1.0
+            }
+        ],
+        [
+            {
+                "uuid": 9010263353077812961
+            },
+            {
+                "bodyType": "Dynamic",
+                "elasticity": 1.0,
+                "invMass": 1.0
+            }
+        ],
+        [
+            {
+                "uuid": 9958607007005993438
             },
             {
                 "bodyType": "Static",
@@ -78,45 +293,92 @@
         ],
         [
             {
-                "uuid": 12332158053744219216
+                "uuid": 10909236309509593708
             },
             {
                 "bodyType": "Dynamic",
-                "elasticity": 0.699999988079071,
+                "elasticity": 1.0,
+                "invMass": 1.0
+            }
+        ],
+        [
+            {
+                "uuid": 11463954824678002935
+            },
+            {
+                "bodyType": "Dynamic",
+                "elasticity": 1.0,
+                "invMass": 1.0
+            }
+        ],
+        [
+            {
+                "uuid": 12903978041531049953
+            },
+            {
+                "bodyType": "Dynamic",
+                "elasticity": 1.0,
+                "invMass": 1.0
+            }
+        ],
+        [
+            {
+                "uuid": 13339144924676127758
+            },
+            {
+                "bodyType": "Dynamic",
+                "elasticity": 1.0,
+                "invMass": 1.0
+            }
+        ],
+        [
+            {
+                "uuid": 14015698840985401523
+            },
+            {
+                "bodyType": "Dynamic",
+                "elasticity": 1.0,
+                "invMass": 1.0
+            }
+        ],
+        [
+            {
+                "uuid": 17651845717313253527
+            },
+            {
+                "bodyType": "Dynamic",
+                "elasticity": 1.0,
                 "invMass": 1.0
             }
         ]
     ],
-    "struct Puffin::Rendering::DirectionalLightComponent": [
+    "struct Puffin::Rendering::LightComponent": [
         [
             {
-                "uuid": 937858766612246121
+                "uuid": 6309612528654733356
             },
             {
-                "ambientColor": {
-                    "x": 0.5,
-                    "y": 0.5,
-                    "z": 0.5
-                },
-                "diffuseColor": {
+                "ambientIntensity": 0.05000000074505806,
+                "color": {
                     "x": 1.0,
                     "y": 1.0,
                     "z": 1.0
                 },
-                "direction": {
-                    "x": 1.0,
-                    "y": -1.0,
-                    "z": 0.0
-                },
-                "shininess": 16,
-                "specularStrength": 0.5
+                "constantAttenuation": 1.0,
+                "innerCutoffAngle": 30.0,
+                "linearAttenuation": 0.09000000357627869,
+                "outerCutoffAngle": 45.0,
+                "quadraticAttenuation": 0.03200000151991844,
+                "specularExponent": 64,
+                "specularIntensity": 1.0,
+                "type": "Directional"
             }
         ]
     ],
     "struct Puffin::Rendering::MeshComponent": [
         [
             {
-                "uuid": 6339383126669700779
+                "uuid": 4069300997860087852
             },
             {
                 "meshAssetID": {
@@ -129,7 +391,7 @@
         ],
         [
             {
-                "uuid": 12332158053744219216
+                "uuid": 4679715195811628288
             },
             {
                 "meshAssetID": {
@@ -139,28 +401,121 @@
                     "uuid": 620206487159760917
                 }
             }
-        ]
-    ],
-    "struct Puffin::Scripting::AngelScriptComponent": [
+        ],
         [
             {
-                "uuid": 12332158053744219216
+                "uuid": 6866536511243900453
             },
             {
-                "dir": "D:\\Projects\\PuffinProject\\content\\scripts\\Physics.pscript",
-                "name": "PhysicsScript",
-                "serializedData": {
-                    "boolProperties": {},
-                    "doubleProperties": {},
-                    "floatProperties": {},
-                    "int16Properties": {},
-                    "int32Properties": {},
-                    "int64Properties": {},
-                    "int8Properties": {},
-                    "uint16Properties": {},
-                    "uint32Properties": {},
-                    "uint64Properties": {},
-                    "uint8Properties": {}
+                "meshAssetID": {
+                    "uuid": 3499349723140706076
+                },
+                "textureAssetID": {
+                    "uuid": 620206487159760917
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 9010263353077812961
+            },
+            {
+                "meshAssetID": {
+                    "uuid": 3499349723140706076
+                },
+                "textureAssetID": {
+                    "uuid": 620206487159760917
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 9958607007005993438
+            },
+            {
+                "meshAssetID": {
+                    "uuid": 3499349723140706076
+                },
+                "textureAssetID": {
+                    "uuid": 620206487159760917
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 10909236309509593708
+            },
+            {
+                "meshAssetID": {
+                    "uuid": 3499349723140706076
+                },
+                "textureAssetID": {
+                    "uuid": 620206487159760917
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 11463954824678002935
+            },
+            {
+                "meshAssetID": {
+                    "uuid": 3499349723140706076
+                },
+                "textureAssetID": {
+                    "uuid": 620206487159760917
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 12903978041531049953
+            },
+            {
+                "meshAssetID": {
+                    "uuid": 3499349723140706076
+                },
+                "textureAssetID": {
+                    "uuid": 620206487159760917
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 13339144924676127758
+            },
+            {
+                "meshAssetID": {
+                    "uuid": 3499349723140706076
+                },
+                "textureAssetID": {
+                    "uuid": 620206487159760917
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 14015698840985401523
+            },
+            {
+                "meshAssetID": {
+                    "uuid": 3499349723140706076
+                },
+                "textureAssetID": {
+                    "uuid": 620206487159760917
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 17651845717313253527
+            },
+            {
+                "meshAssetID": {
+                    "uuid": 3499349723140706076
+                },
+                "textureAssetID": {
+                    "uuid": 620206487159760917
                 }
             }
         ]
@@ -168,15 +523,16 @@
     "struct Puffin::TransformComponent": [
         [
             {
-                "uuid": 937858766612246121
+                "uuid": 4069300997860087852
             },
             {
                 "position": {
-                    "x": 0.0,
+                    "x": 10.0,
                     "y": 10.0,
                     "z": 0.0
                 },
                 "rotation": {
+                    "w": 1.0,
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
@@ -190,21 +546,22 @@
         ],
         [
             {
-                "uuid": 6339383126669700779
+                "uuid": 4679715195811628288
             },
             {
                 "position": {
-                    "x": 0.0,
-                    "y": 0.0,
+                    "x": 15.0,
+                    "y": 10.0,
                     "z": 0.0
                 },
                 "rotation": {
+                    "w": 1.0,
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
                 },
                 "scale": {
-                    "x": 5.0,
+                    "x": 1.0,
                     "y": 1.0,
                     "z": 1.0
                 }
@@ -212,15 +569,223 @@
         ],
         [
             {
-                "uuid": 12332158053744219216
+                "uuid": 6309612528654733356
             },
             {
                 "position": {
-                    "x": -2.0,
+                    "x": -5.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "w": 1.0,
+                    "x": 0.5,
+                    "y": -0.5,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 6866536511243900453
+            },
+            {
+                "position": {
+                    "x": 5.0,
                     "y": 10.0,
                     "z": 0.0
                 },
                 "rotation": {
+                    "w": 1.0,
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 9010263353077812961
+            },
+            {
+                "position": {
+                    "x": 20.0,
+                    "y": 10.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "w": 1.0,
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 9958607007005993438
+            },
+            {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "w": 1.0,
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 250.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 10909236309509593708
+            },
+            {
+                "position": {
+                    "x": -5.0,
+                    "y": 10.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "w": 1.0,
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 11463954824678002935
+            },
+            {
+                "position": {
+                    "x": -25.0,
+                    "y": 10.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "w": 1.0,
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 12903978041531049953
+            },
+            {
+                "position": {
+                    "x": -20.0,
+                    "y": 10.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "w": 1.0,
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 13339144924676127758
+            },
+            {
+                "position": {
+                    "x": 0.0,
+                    "y": 10.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "w": 1.0,
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 14015698840985401523
+            },
+            {
+                "position": {
+                    "x": -15.0,
+                    "y": 10.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "w": 1.0,
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            }
+        ],
+        [
+            {
+                "uuid": 17651845717313253527
+            },
+            {
+                "position": {
+                    "x": -10.0,
+                    "y": 10.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "w": 1.0,
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
