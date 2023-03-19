@@ -1,90 +1,121 @@
 {
-    "paths": [
+    "data": [
         [
             {
                 "uuid": 18350623972674393860
             },
-            "meshes\\chalet.pstaticmesh"
+            {
+                "path": "meshes\\chalet.pstaticmesh",
+                "type": "StaticMesh"
+            }
         ],
         [
             {
                 "uuid": 3499349723140706076
             },
-            "meshes\\cube.pstaticmesh"
+            {
+                "path": "meshes\\cube.pstaticmesh",
+                "type": "StaticMesh"
+            }
         ],
         [
             {
                 "uuid": 9291831027415426800
             },
-            "meshes\\space_engineer.pstaticmesh"
+            {
+                "path": "meshes\\space_engineer.pstaticmesh",
+                "type": "StaticMesh"
+            }
         ],
         [
             {
                 "uuid": 7461563914104352456
             },
-            "meshes\\sphere.pstaticmesh"
+            {
+                "path": "meshes\\sphere.pstaticmesh",
+                "type": "StaticMesh"
+            }
         ],
         [
             {
                 "uuid": 7777109360633946356
             },
-            "textures\\chalet.ptexture"
+            {
+                "path": "textures\\chalet.ptexture",
+                "type": "Texture"
+            }
         ],
         [
             {
                 "uuid": 620206487159760917
             },
-            "textures\\cube.ptexture"
+            {
+                "path": "textures\\cube.ptexture",
+                "type": "Texture"
+            }
         ],
         [
             {
                 "uuid": 4851113554859946064
             },
-            "sounds\\Select 1.wav"
-        ]
-    ],
-    "types": [
-        [
             {
-                "uuid": 18350623972674393860
-            },
-            "StaticMesh"
+                "path": "sounds\\Select 1.wav",
+                "type": "Sound"
+            }
         ],
         [
             {
-                "uuid": 3499349723140706076
+                "uuid": 2792684041985071265
             },
-            "StaticMesh"
+            {
+                "path": "DamagedHelmet\\mesh_helmet_LP_13930damagedHelmet.pstaticmesh",
+                "type": "StaticMesh"
+            }
         ],
         [
             {
-                "uuid": 9291831027415426800
+                "uuid": 6975512166122576470
             },
-            "StaticMesh"
+            {
+                "path": "DamagedHelmet\\Default_normal.ptexture",
+                "type": "Texture"
+            }
         ],
         [
             {
-                "uuid": 7461563914104352456
+                "uuid": 1495604461203089648
             },
-            "StaticMesh"
+            {
+                "path": "DamagedHelmet\\Default_albedo.ptexture",
+                "type": "Texture"
+            }
         ],
         [
             {
-                "uuid": 7777109360633946356
+                "uuid": 7253357201339406369
             },
-            "Texture"
+            {
+                "path": "DamagedHelmet\\Default_metalRoughness.ptexture",
+                "type": "Texture"
+            }
         ],
         [
             {
-                "uuid": 620206487159760917
+                "uuid": 5117606051693735995
             },
-            "Texture"
+            {
+                "path": "DamagedHelmet\\Default_emissive.ptexture",
+                "type": "Texture"
+            }
         ],
         [
             {
-                "uuid": 4851113554859946064
+                "uuid": 9953168463492707489
             },
-            "Sound"
+            {
+                "path": "DamagedHelmet\\Default_AO.ptexture",
+                "type": "Texture"
+            }
         ]
     ]
 }
