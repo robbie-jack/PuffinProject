@@ -20,11 +20,11 @@ class CExample
 
     void Update()
     {
-        STransformComponent@ transform = GetTransformComponent(GetEntityID());
+        //STransformComponent@ transform = GetTransformComponent(GetEntityID());
 
         if (isSpacebarPressed)
         {
-            transform.position.x += 1.0f * GetDeltaTime();
+            //transform.position.x += 1.0f * GetDeltaTime();
         }
 
         timeCount += GetDeltaTime();
@@ -36,6 +36,11 @@ class CExample
             Print("Time Since Game Start: " + secondsPassed + " Seconds");
         }
     }
+	
+	void FixedUpdate()
+	{
+		
+	}
 
     void Stop()
     {
