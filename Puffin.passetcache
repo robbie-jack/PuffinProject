@@ -62,6 +62,13 @@
                 "path": "sounds\\Select 1.wav",
                 "type": "Sound"
             }
+        ],
+        [
+            662825087472530043,
+            {
+                "path": "shaders\\forward_shading\\forward_shading.pmaterial",
+                "type": "Material"
+            }
         ]
     ]
 }
