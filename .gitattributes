@@ -2,3 +2,4 @@
 * text=auto
 *.pstaticmesh filter=lfs diff=lfs merge=lfs -text
 *.ptexture filter=lfs diff=lfs merge=lfs -text
+*.pshader filter=lfs diff=lfs merge=lfs -text
