@@ -64,9 +64,16 @@
             }
         ],
         [
-            662825087472530043,
+            17964916858719279418,
             {
-                "path": "shaders\\forward_shading\\forward_shading.pmaterial",
+                "path": "shaders\\forward_shading\\forward_shading_default.pmaterial",
+                "type": "Material"
+            }
+        ],
+        [
+            17226175135533354451,
+            {
+                "path": "shaders\\forward_shading\\forward_shading_chalet.pmaterial",
                 "type": "Material"
             }
         ]
