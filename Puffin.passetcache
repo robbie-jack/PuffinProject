@@ -4,14 +4,14 @@
             15915482980677201780,
             {
                 "path": "shaders\\forward_shading\\forward_shading_vert.pshader",
-                "type": "StaticMesh"
+                "type": "Shader"
             }
         ],
         [
             15264406144390715199,
             {
                 "path": "shaders\\forward_shading\\forward_shading_frag.pshader",
-                "type": "StaticMesh"
+                "type": "Shader"
             }
         ],
         [
