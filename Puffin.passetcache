@@ -8,17 +8,10 @@
             }
         ],
         [
-            15264406144390715199,
+            2723259842832296404,
             {
-                "path": "shaders\\forward_shading\\forward_shading_frag.pshader",
-                "type": "Shader"
-            }
-        ],
-        [
-            2260790255057296587,
-            {
-                "path": "textures\\cube.ptexture",
-                "type": "Texture"
+                "path": "meshes\\cube.pstaticmesh",
+                "type": "StaticMesh"
             }
         ],
         [
@@ -29,10 +22,17 @@
             }
         ],
         [
-            2723259842832296404,
+            2260790255057296587,
             {
-                "path": "meshes\\cube.pstaticmesh",
-                "type": "StaticMesh"
+                "path": "textures\\cube.ptexture",
+                "type": "Texture"
+            }
+        ],
+        [
+            15264406144390715199,
+            {
+                "path": "shaders\\forward_shading\\forward_shading_frag.pshader",
+                "type": "Shader"
             }
         ],
         [
@@ -75,6 +75,27 @@
             {
                 "path": "shaders\\forward_shading\\forward_shading_chalet.pmaterial",
                 "type": "Material"
+            }
+        ],
+        [
+            14751984270714079157,
+            {
+                "path": "textures\\space_engineer.ptexture",
+                "type": "Texture"
+            }
+        ],
+        [
+            17399194021493457433,
+            {
+                "path": "textures\\statue.ptexture",
+                "type": "Texture"
+            }
+        ],
+        [
+            2181063787215966556,
+            {
+                "path": "textures\\xsprite.ptexture",
+                "type": "Texture"
             }
         ]
     ]
