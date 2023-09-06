@@ -1,4 +1,5 @@
 {
-    "name": "Puffin",
-    "defaultScenePath": "scenes\\default.pscene"
+    "additionalContentDirectories": [],
+    "defaultScenePath": "scenes\\default.pscene",
+    "name": "Puffin"
 }

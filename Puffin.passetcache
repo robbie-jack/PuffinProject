@@ -3,7 +3,7 @@
         [
             15915482980677201780,
             {
-                "path": "shaders\\forward_shading\\forward_shading_vert.pshader",
+                "path": "materials\\forward_shading\\forward_shading_vert.pshader",
                 "type": "Shader"
             }
         ],
@@ -31,7 +31,7 @@
         [
             15264406144390715199,
             {
-                "path": "shaders\\forward_shading\\forward_shading_frag.pshader",
+                "path": "materials\\forward_shading\\forward_shading_frag.pshader",
                 "type": "Shader"
             }
         ],
@@ -66,14 +66,14 @@
         [
             17964916858719279418,
             {
-                "path": "shaders\\forward_shading\\forward_shading_default.pmaterial",
+                "path": "materials\\forward_shading\\forward_shading_default.pmaterial",
                 "type": "Material"
             }
         ],
         [
             17226175135533354451,
             {
-                "path": "shaders\\forward_shading\\forward_shading_chalet.pmaterial",
+                "path": "materials\\forward_shading\\forward_shading_chalet.pmaterial",
                 "type": "Material"
             }
         ],
