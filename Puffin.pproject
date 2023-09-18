@@ -1,5 +1,5 @@
 {
     "additionalContentDirectories": [],
-    "defaultScenePath": "scenes\\physics2d.pscene",
+    "defaultScenePath": "scenes\\physics3d.pscene",
     "name": "Puffin"
 }
