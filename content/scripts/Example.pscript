@@ -15,16 +15,16 @@ class CExample
 
         Print("Game Starting");
         Print("Starting Time: " + startingTime);
-        Print("Entity ID: " + GetEntityID());
+        //Print("Entity ID: " + GetEntityID());
     }
 
     void Update()
     {
-        //STransformComponent@ transform = GetTransformComponent(GetEntityID());
+        TransformComponent3D@ transform = GetTransform3D(GetEntityID());
 
         if (isSpacebarPressed)
         {
-            //transform.position.x += 1.0f * GetDeltaTime();
+            transform.position.x += 1.0f * GetDeltaTime();
         }
 
         timeCount += GetDeltaTime();
@@ -34,6 +34,7 @@ class CExample
             timeCount -= 1.0;
             secondsPassed++;
             Print("Time Since Game Start: " + secondsPassed + " Seconds");
+			Print("Position X: " + transform.position.x + " Y: " + transform.position.y + " Z: " + transform.position.z);
         }
     }
 	
