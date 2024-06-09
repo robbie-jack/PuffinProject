@@ -1,100 +1,93 @@
 {
     "data": [
         [
-            15915482980677201780,
+            7844429595245869321,
             {
-                "path": "materials\\forward_shading\\forward_shading_vert.pshader",
-                "type": "Shader"
+                "path": "meshes/chalet.pstaticmesh",
+                "type": "StaticMesh"
             }
         ],
         [
-            15264406144390715199,
+            9051151466792209371,
             {
-                "path": "materials\\forward_shading\\forward_shading_frag.pshader",
-                "type": "Shader"
+                "path": "meshes/cube.pstaticmesh",
+                "type": "StaticMesh"
             }
         ],
         [
-            10962734192665855534,
+            15260004663518256160,
             {
-                "path": "materials\\forward_shading\\forward_shading_chalet.pmaterialinst",
+                "path": "textures/cube.ptexture",
+                "type": "Texture"
+            }
+        ],
+        [
+            13149527220308490250,
+            {
+                "path": "meshes/space_engineer.pstaticmesh",
+                "type": "StaticMesh"
+            }
+        ],
+        [
+            2727740425310534041,
+            {
+                "path": "materials/forward_shading/forward_shading_chalet.pmaterialinst",
                 "type": "MaterialInst"
             }
         ],
         [
-            2260790255057296587,
+            6336519377260614655,
             {
-                "path": "textures\\cube.ptexture",
+                "path": "textures/chalet.ptexture",
                 "type": "Texture"
             }
         ],
         [
-            9270576993419613898,
+            2136908340754126975,
             {
-                "path": "meshes\\space_engineer.pstaticmesh",
-                "type": "StaticMesh"
-            }
-        ],
-        [
-            2723259842832296404,
-            {
-                "path": "meshes\\cube.pstaticmesh",
-                "type": "StaticMesh"
-            }
-        ],
-        [
-            14654155061481921789,
-            {
-                "path": "meshes\\chalet.pstaticmesh",
-                "type": "StaticMesh"
-            }
-        ],
-        [
-            9641278829019299195,
-            {
-                "path": "meshes\\sphere.pstaticmesh",
-                "type": "StaticMesh"
-            }
-        ],
-        [
-            6382907768454124759,
-            {
-                "path": "textures\\chalet.ptexture",
+                "path": "textures/xsprite.ptexture",
                 "type": "Texture"
             }
         ],
         [
-            18289543553553815800,
+            6587772085549585638,
             {
-                "path": "sounds\\Select 1.wav",
+                "path": "textures/space_engineer.ptexture",
+                "type": "Texture"
+            }
+        ],
+        [
+            2367964968791720085,
+            {
+                "path": "textures/statue.ptexture",
+                "type": "Texture"
+            }
+        ],
+        [
+            2306314265850606165,
+            {
+                "path": "sounds/Select 1.wav",
                 "type": "Sound"
             }
         ],
         [
-            14751984270714079157,
+            14082355614286946389,
             {
-                "path": "textures\\space_engineer.ptexture",
-                "type": "Texture"
+                "path": "materials/forward_shading/forward_shading_vert.pshader",
+                "type": "Shader"
             }
         ],
         [
-            17399194021493457433,
+            5714644986738391082,
             {
-                "path": "textures\\statue.ptexture",
-                "type": "Texture"
+                "path": "materials/forward_shading/forward_shading_frag.pshader",
+                "type": "Shader"
             }
         ],
         [
-            2181063787215966556,
+            7589626914278510215,
             {
-                "path": "textures\\xsprite.ptexture",
-                "type": "Texture"
-            }
-        ],
-        [
-            5492524568318896891,
-            {
-                "path": "materials\\forward_shading\\forward_shading_default.pmaterialinst",
+                "path": "materials/forward_shading/forward_shading_default.pmaterialinst",
                 "type": "MaterialInst"
             }
         ]
