@@ -3,92 +3,50 @@
         [
             7844429595245869321,
             {
-                "path": "meshes/chalet.pstaticmesh",
+                "path": "meshes\\chalet.pstaticmesh",
                 "type": "StaticMesh"
             }
         ],
         [
             9051151466792209371,
             {
-                "path": "meshes/cube.pstaticmesh",
-                "type": "StaticMesh"
-            }
-        ],
-        [
-            15260004663518256160,
-            {
-                "path": "textures/cube.ptexture",
-                "type": "Texture"
-            }
-        ],
-        [
-            13149527220308490250,
-            {
-                "path": "meshes/space_engineer.pstaticmesh",
+                "path": "meshes\\cube.pstaticmesh",
                 "type": "StaticMesh"
             }
         ],
         [
             2727740425310534041,
             {
-                "path": "materials/forward_shading/forward_shading_chalet.pmaterialinst",
-                "type": "MaterialInst"
+                "path": "materials\\forward_shading\\forward_shading_chalet.pmaterialinst",
+                "type": "MaterialInstance"
+            }
+        ],
+        [
+            13149527220308490250,
+            {
+                "path": "meshes\\space_engineer.pstaticmesh",
+                "type": "StaticMesh"
             }
         ],
         [
             6336519377260614655,
             {
-                "path": "textures/chalet.ptexture",
+                "path": "textures\\chalet.ptexture",
                 "type": "Texture"
             }
         ],
         [
-            2136908340754126975,
+            15260004663518256160,
             {
-                "path": "textures/xsprite.ptexture",
+                "path": "textures\\cube.ptexture",
                 "type": "Texture"
-            }
-        ],
-        [
-            6587772085549585638,
-            {
-                "path": "textures/space_engineer.ptexture",
-                "type": "Texture"
-            }
-        ],
-        [
-            2367964968791720085,
-            {
-                "path": "textures/statue.ptexture",
-                "type": "Texture"
-            }
-        ],
-        [
-            2306314265850606165,
-            {
-                "path": "sounds/Select 1.wav",
-                "type": "Sound"
-            }
-        ],
-        [
-            14082355614286946389,
-            {
-                "path": "materials/forward_shading/forward_shading_vert.pshader",
-                "type": "Shader"
-            }
-        ],
-        [
-            5714644986738391082,
-            {
-                "path": "materials/forward_shading/forward_shading_frag.pshader",
-                "type": "Shader"
             }
         ],
         [
             7589626914278510215,
             {
-                "path": "materials/forward_shading/forward_shading_default.pmaterialinst",
-                "type": "MaterialInst"
+                "path": "materials\\forward_shading\\forward_shading_default.pmaterialinst",
+                "type": "MaterialInstance"
             }
         ]
     ]
