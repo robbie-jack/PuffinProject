@@ -1,223 +1,172 @@
 {
-    "child_node_ids": [
+    "NodeIDToJson": [
         [
-            5228307826934069752,
-            [
-                1354823217396552006
-            ]
-        ],
-        [
-            11082400595359655422,
-            [
-                13142143052746033998
-            ]
-        ],
-        [
-            1726715498263441193,
-            [
-                186513104621007041
-            ]
-        ]
-    ],
-    "entity_ids": [
-        13142143052746033998,
-        11082400595359655422,
-        186513104621007041,
-        1726715498263441193,
-        1354823217396552006,
-        5228307826934069752,
-        17354293857728061066,
-        17769791264942254717,
-        8322643166926541593,
-        13405918257468696463
-    ],
-    "node_id_to_json": [
-        [
-            186513104621007041,
+            11341246792381009832,
             {
                 "name": "Mesh"
             }
         ],
         [
-            17769791264942254717,
-            {
-                "name": "Cube_2"
-            }
-        ],
-        [
-            13405918257468696463,
+            16103826526909103205,
             {
                 "name": "House"
             }
         ],
         [
-            5228307826934069752,
+            17469926228775421924,
             {
                 "name": "Directional Light"
             }
         ],
         [
-            8322643166926541593,
+            3536329278399176241,
+            {
+                "name": "Cube_2"
+            }
+        ],
+        [
+            11039069788792167689,
             {
                 "name": "Cube_1"
             }
         ],
         [
-            17354293857728061066,
+            12756803389487990332,
             {
                 "name": "Plane"
             }
         ],
         [
-            1354823217396552006,
+            12132074093294634086,
             {
                 "name": "Mesh"
             }
         ],
         [
-            13142143052746033998,
-            {
-                "name": "Mesh"
-            }
-        ],
-        [
-            1726715498263441193,
+            1800063752590847275,
             {
                 "name": "Spot Light"
             }
         ],
         [
-            11082400595359655422,
+            11597691623511648517,
             {
                 "name": "Spot Light 2"
             }
+        ],
+        [
+            14554775779459454050,
+            {
+                "name": "Mesh"
+            }
         ]
     ],
-    "node_id_to_type": [
+    "childNodeIDs": [
         [
-            186513104621007041,
-            "class puffin::rendering::MeshNode"
+            17469926228775421924,
+            [
+                12132074093294634086
+            ]
         ],
         [
-            17769791264942254717,
-            "class puffin::rendering::MeshNode"
+            1800063752590847275,
+            [
+                11341246792381009832
+            ]
         ],
         [
-            13405918257468696463,
-            "class puffin::rendering::MeshNode"
-        ],
-        [
-            5228307826934069752,
-            "class puffin::rendering::LightNode3D"
-        ],
-        [
-            8322643166926541593,
-            "class puffin::rendering::MeshNode"
-        ],
-        [
-            17354293857728061066,
-            "class puffin::rendering::MeshNode"
-        ],
-        [
-            1354823217396552006,
-            "class puffin::rendering::MeshNode"
-        ],
-        [
-            13142143052746033998,
-            "class puffin::rendering::MeshNode"
-        ],
-        [
-            1726715498263441193,
-            "class puffin::rendering::LightNode3D"
-        ],
-        [
-            11082400595359655422,
-            "class puffin::rendering::LightNode3D"
+            11597691623511648517,
+            [
+                14554775779459454050
+            ]
         ]
     ],
-    "node_ids": [
-        13405918257468696463,
-        8322643166926541593,
-        17769791264942254717,
-        17354293857728061066,
-        5228307826934069752,
-        1354823217396552006,
-        1726715498263441193,
-        186513104621007041,
-        11082400595359655422,
-        13142143052746033998
+    "entityIDs": [
+        14554775779459454050,
+        11597691623511648517,
+        11341246792381009832,
+        1800063752590847275,
+        12132074093294634086,
+        17469926228775421924,
+        12756803389487990332,
+        3536329278399176241,
+        11039069788792167689,
+        16103826526909103205,
+        18136592768410339886
     ],
-    "root_node_ids": [
-        13405918257468696463,
-        8322643166926541593,
-        17769791264942254717,
-        17354293857728061066,
-        5228307826934069752,
-        1726715498263441193,
-        11082400595359655422
+    "nodeIDToType": [
+        [
+            11341246792381009832,
+            "class puffin::rendering::StaticMeshNode3D"
+        ],
+        [
+            16103826526909103205,
+            "class puffin::rendering::StaticMeshNode3D"
+        ],
+        [
+            17469926228775421924,
+            "class puffin::rendering::DirectionalLightNode3D"
+        ],
+        [
+            3536329278399176241,
+            "class puffin::rendering::StaticMeshNode3D"
+        ],
+        [
+            11039069788792167689,
+            "class puffin::rendering::StaticMeshNode3D"
+        ],
+        [
+            12756803389487990332,
+            "class puffin::rendering::StaticMeshNode3D"
+        ],
+        [
+            12132074093294634086,
+            "class puffin::rendering::StaticMeshNode3D"
+        ],
+        [
+            1800063752590847275,
+            "class puffin::rendering::SpotLightNode3D"
+        ],
+        [
+            11597691623511648517,
+            "class puffin::rendering::SpotLightNode3D"
+        ],
+        [
+            14554775779459454050,
+            "class puffin::rendering::StaticMeshNode3D"
+        ]
+    ],
+    "nodeIDs": [
+        16103826526909103205,
+        11039069788792167689,
+        3536329278399176241,
+        12756803389487990332,
+        17469926228775421924,
+        12132074093294634086,
+        1800063752590847275,
+        11341246792381009832,
+        11597691623511648517,
+        14554775779459454050
+    ],
+    "rootNodeIDs": [
+        16103826526909103205,
+        11039069788792167689,
+        3536329278399176241,
+        12756803389487990332,
+        17469926228775421924,
+        1800063752590847275,
+        11597691623511648517
     ],
     "struct puffin::TransformComponent3D": [
         [
-            186513104621007041,
+            1800063752590847275,
             {
-                "orientation_euler_angles": {
+                "orientationEulerAngles": {
                     "pitch": 0.0,
                     "roll": 0.0,
                     "yaw": 0.0
                 },
-                "orientation_quat": {
-                    "w": 1.0,
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "position": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "scale": {
-                    "x": 0.25,
-                    "y": 0.25,
-                    "z": 0.25
-                }
-            }
-        ],
-        [
-            1354823217396552006,
-            {
-                "orientation_euler_angles": {
-                    "pitch": 0.0,
-                    "roll": 0.0,
-                    "yaw": 0.0
-                },
-                "orientation_quat": {
-                    "w": 1.0,
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "position": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "scale": {
-                    "x": 0.25,
-                    "y": 0.25,
-                    "z": 0.25
-                }
-            }
-        ],
-        [
-            1726715498263441193,
-            {
-                "orientation_euler_angles": {
-                    "pitch": 0.0,
-                    "roll": 0.0,
-                    "yaw": 0.0
-                },
-                "orientation_quat": {
+                "orientationQuat": {
                     "w": 1.0,
                     "x": 0.0,
                     "y": 0.0,
@@ -236,22 +185,22 @@
             }
         ],
         [
-            5228307826934069752,
+            3536329278399176241,
             {
-                "orientation_euler_angles": {
+                "orientationEulerAngles": {
                     "pitch": 0.0,
                     "roll": 0.0,
-                    "yaw": -90.0
+                    "yaw": 0.0
                 },
-                "orientation_quat": {
-                    "w": 0.7071067690849304,
+                "orientationQuat": {
+                    "w": 1.0,
                     "x": 0.0,
-                    "y": 0.7071067690849304,
-                    "z": 0.0
+                    "y": 0.0,
+                    "z": -0.0
                 },
                 "position": {
-                    "x": 0.0,
-                    "y": 10.0,
+                    "x": -1.75,
+                    "y": -5.0,
                     "z": 0.0
                 },
                 "scale": {
@@ -262,14 +211,14 @@
             }
         ],
         [
-            8322643166926541593,
+            11039069788792167689,
             {
-                "orientation_euler_angles": {
+                "orientationEulerAngles": {
                     "pitch": 0.0,
                     "roll": 0.0,
                     "yaw": 0.0
                 },
-                "orientation_quat": {
+                "orientationQuat": {
                     "w": 1.0,
                     "x": 0.0,
                     "y": 0.0,
@@ -288,40 +237,14 @@
             }
         ],
         [
-            11082400595359655422,
+            11341246792381009832,
             {
-                "orientation_euler_angles": {
-                    "pitch": 0.0,
-                    "roll": 0.0,
-                    "yaw": 180.0
-                },
-                "orientation_quat": {
-                    "w": -4.371138828673793e-08,
-                    "x": 0.0,
-                    "y": -1.0,
-                    "z": 0.0
-                },
-                "position": {
-                    "x": 10.0,
-                    "y": 5.0,
-                    "z": 0.0
-                },
-                "scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                }
-            }
-        ],
-        [
-            13142143052746033998,
-            {
-                "orientation_euler_angles": {
+                "orientationEulerAngles": {
                     "pitch": 0.0,
                     "roll": 0.0,
                     "yaw": 0.0
                 },
-                "orientation_quat": {
+                "orientationQuat": {
                     "w": 1.0,
                     "x": 0.0,
                     "y": 0.0,
@@ -340,22 +263,22 @@
             }
         ],
         [
-            13405918257468696463,
+            11597691623511648517,
             {
-                "orientation_euler_angles": {
+                "orientationEulerAngles": {
                     "pitch": 0.0,
                     "roll": 0.0,
-                    "yaw": 0.0
+                    "yaw": 180.0
                 },
-                "orientation_quat": {
-                    "w": 1.0,
+                "orientationQuat": {
+                    "w": -4.371138828673793e-08,
                     "x": 0.0,
-                    "y": 0.0,
-                    "z": -0.0
+                    "y": -1.0,
+                    "z": 0.0
                 },
                 "position": {
-                    "x": 2.0,
-                    "y": 0.0,
+                    "x": 10.0,
+                    "y": 5.0,
                     "z": 0.0
                 },
                 "scale": {
@@ -366,14 +289,40 @@
             }
         ],
         [
-            17354293857728061066,
+            12132074093294634086,
             {
-                "orientation_euler_angles": {
+                "orientationEulerAngles": {
                     "pitch": 0.0,
                     "roll": 0.0,
                     "yaw": 0.0
                 },
-                "orientation_quat": {
+                "orientationQuat": {
+                    "w": 1.0,
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 0.25,
+                    "y": 0.25,
+                    "z": 0.25
+                }
+            }
+        ],
+        [
+            12756803389487990332,
+            {
+                "orientationEulerAngles": {
+                    "pitch": 0.0,
+                    "roll": 0.0,
+                    "yaw": 0.0
+                },
+                "orientationQuat": {
                     "w": 1.0,
                     "x": 0.0,
                     "y": 0.0,
@@ -392,22 +341,74 @@
             }
         ],
         [
-            17769791264942254717,
+            14554775779459454050,
             {
-                "orientation_euler_angles": {
+                "orientationEulerAngles": {
                     "pitch": 0.0,
                     "roll": 0.0,
                     "yaw": 0.0
                 },
-                "orientation_quat": {
+                "orientationQuat": {
                     "w": 1.0,
                     "x": 0.0,
                     "y": 0.0,
                     "z": -0.0
                 },
                 "position": {
-                    "x": -1.75,
-                    "y": -5.0,
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 0.25,
+                    "y": 0.25,
+                    "z": 0.25
+                }
+            }
+        ],
+        [
+            16103826526909103205,
+            {
+                "orientationEulerAngles": {
+                    "pitch": 0.0,
+                    "roll": 0.0,
+                    "yaw": 0.0
+                },
+                "orientationQuat": {
+                    "w": 1.0,
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "position": {
+                    "x": 2.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            }
+        ],
+        [
+            17469926228775421924,
+            {
+                "orientationEulerAngles": {
+                    "pitch": 0.0,
+                    "roll": 0.0,
+                    "yaw": -90.0
+                },
+                "orientationQuat": {
+                    "w": 0.7071067690849304,
+                    "x": 0.0,
+                    "y": 0.7071067690849304,
+                    "z": 0.0
+                },
+                "position": {
+                    "x": 0.0,
+                    "y": 10.0,
                     "z": 0.0
                 },
                 "scale": {
@@ -418,155 +419,159 @@
             }
         ]
     ],
-    "struct puffin::rendering::LightComponent": [
+    "struct puffin::rendering::DirectionalLightComponent3D": [
         [
-            1726715498263441193,
+            17469926228775421924,
             {
-                "ambient_intensity": 0.0,
-                "color": {
-                    "x": 0.5,
-                    "y": 0.5,
-                    "z": 1.0
-                },
-                "constant_attenuation": 1.0,
-                "inner_cutoff_angle": 30.0,
-                "linear_attenuation": 0.09000000357627869,
-                "outer_cutoff_angle": 45.0,
-                "quadratic_attenuation": 0.03200000151991844,
-                "specular_exponent": 64,
-                "specular_intensity": 1.0,
-                "type": "Spot"
-            }
-        ],
-        [
-            5228307826934069752,
-            {
-                "ambient_intensity": 0.0,
+                "ambientIntensity": 0.0,
                 "color": {
                     "x": 0.05000000074505806,
                     "y": 0.05000000074505806,
                     "z": 0.05000000074505806
                 },
-                "constant_attenuation": 1.0,
-                "inner_cutoff_angle": 30.0,
-                "linear_attenuation": 0.09000000357627869,
-                "outer_cutoff_angle": 45.0,
-                "quadratic_attenuation": 0.03200000151991844,
-                "specular_exponent": 64,
-                "specular_intensity": 1.0,
-                "type": "Directional"
+                "specularExponent": 64,
+                "specularIntensity": 1.0
+            }
+        ]
+    ],
+    "struct puffin::rendering::ShadowCasterComponent3D": [
+        [
+            1800063752590847275,
+            {
+                "biasMax": 0.5,
+                "biasMin": 0.05000000074505806,
+                "boundsMult": 2.0,
+                "cascadeCount": 1,
+                "height": 8192,
+                "width": 8192
             }
         ],
         [
-            11082400595359655422,
+            11597691623511648517,
             {
-                "ambient_intensity": 0.0,
+                "biasMax": 0.5,
+                "biasMin": 0.05000000074505806,
+                "boundsMult": 2.0,
+                "cascadeCount": 1,
+                "height": 8192,
+                "width": 8192
+            }
+        ],
+        [
+            17469926228775421924,
+            {
+                "biasMax": 0.5,
+                "biasMin": 0.30000001192092896,
+                "boundsMult": 2.0,
+                "cascadeCount": 1,
+                "height": 8192,
+                "width": 8192
+            }
+        ]
+    ],
+    "struct puffin::rendering::SpotLightComponent3D": [
+        [
+            1800063752590847275,
+            {
+                "ambientIntensity": 0.0,
+                "color": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "z": 1.0
+                },
+                "constantAttenuation": 1.0,
+                "direction": {
+                    "x": 1.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "innerCutoffAngle": 30.0,
+                "linearAttenuation": 0.09000000357627869,
+                "outerCutoffAngle": 45.0,
+                "quadraticAttenuation": 0.03200000151991844,
+                "specularExponent": 64,
+                "specularIntensity": 1.0
+            }
+        ],
+        [
+            11597691623511648517,
+            {
+                "ambientIntensity": 0.0,
                 "color": {
                     "x": 1.0,
                     "y": 0.5,
                     "z": 0.5
                 },
-                "constant_attenuation": 1.0,
-                "inner_cutoff_angle": 30.0,
-                "linear_attenuation": 0.09000000357627869,
-                "outer_cutoff_angle": 45.0,
-                "quadratic_attenuation": 0.03200000151991844,
-                "specular_exponent": 64,
-                "specular_intensity": 1.0,
-                "type": "Spot"
+                "constantAttenuation": 1.0,
+                "direction": {
+                    "x": 1.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "innerCutoffAngle": 30.0,
+                "linearAttenuation": 0.09000000357627869,
+                "outerCutoffAngle": 45.0,
+                "quadraticAttenuation": 0.03200000151991844,
+                "specularExponent": 64,
+                "specularIntensity": 1.0
             }
         ]
     ],
-    "struct puffin::rendering::MeshComponent": [
+    "struct puffin::rendering::StaticMeshComponent3D": [
         [
-            186513104621007041,
+            3536329278399176241,
             {
-                "mat_asset_id": 7589626914278510215,
-                "mesh_asset_id": 9051151466792209371,
-                "sub_mesh_idx": 0
+                "materialID": 7589626914278510215,
+                "meshID": 9051151466792209371,
+                "subMeshIdx": 0
             }
         ],
         [
-            1354823217396552006,
+            11039069788792167689,
             {
-                "mat_asset_id": 7589626914278510215,
-                "mesh_asset_id": 9051151466792209371,
-                "sub_mesh_idx": 0
+                "materialID": 7589626914278510215,
+                "meshID": 9051151466792209371,
+                "subMeshIdx": 0
             }
         ],
         [
-            8322643166926541593,
+            11341246792381009832,
             {
-                "mat_asset_id": 7589626914278510215,
-                "mesh_asset_id": 9051151466792209371,
-                "sub_mesh_idx": 0
+                "materialID": 7589626914278510215,
+                "meshID": 9051151466792209371,
+                "subMeshIdx": 0
             }
         ],
         [
-            13142143052746033998,
+            12132074093294634086,
             {
-                "mat_asset_id": 7589626914278510215,
-                "mesh_asset_id": 9051151466792209371,
-                "sub_mesh_idx": 0
+                "materialID": 7589626914278510215,
+                "meshID": 9051151466792209371,
+                "subMeshIdx": 0
             }
         ],
         [
-            13405918257468696463,
+            12756803389487990332,
             {
-                "mat_asset_id": 7589626914278510215,
-                "mesh_asset_id": 7844429595245869321,
-                "sub_mesh_idx": 0
+                "materialID": 7589626914278510215,
+                "meshID": 9051151466792209371,
+                "subMeshIdx": 0
             }
         ],
         [
-            17354293857728061066,
+            14554775779459454050,
             {
-                "mat_asset_id": 7589626914278510215,
-                "mesh_asset_id": 9051151466792209371,
-                "sub_mesh_idx": 0
+                "materialID": 7589626914278510215,
+                "meshID": 9051151466792209371,
+                "subMeshIdx": 0
             }
         ],
         [
-            17769791264942254717,
+            16103826526909103205,
             {
-                "mat_asset_id": 7589626914278510215,
-                "mesh_asset_id": 9051151466792209371,
-                "sub_mesh_idx": 0
-            }
-        ]
-    ],
-    "struct puffin::rendering::ShadowCasterComponent": [
-        [
-            1726715498263441193,
-            {
-                "bias_max": 0.5,
-                "bias_min": 0.05000000074505806,
-                "bounds_mult": 2.0,
-                "cascade_count": 1,
-                "height": 8192,
-                "width": 8192
-            }
-        ],
-        [
-            5228307826934069752,
-            {
-                "bias_max": 0.5,
-                "bias_min": 0.30000001192092896,
-                "bounds_mult": 2.0,
-                "cascade_count": 1,
-                "height": 8192,
-                "width": 8192
-            }
-        ],
-        [
-            11082400595359655422,
-            {
-                "bias_max": 0.5,
-                "bias_min": 0.05000000074505806,
-                "bounds_mult": 2.0,
-                "cascade_count": 1,
-                "height": 8192,
-                "width": 8192
+                "materialID": 7589626914278510215,
+                "meshID": 7844429595245869321,
+                "subMeshIdx": 0
             }
         ]
     ]
