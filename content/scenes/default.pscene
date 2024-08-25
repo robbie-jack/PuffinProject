@@ -1,577 +1,772 @@
 {
-    "NodeIDToJson": [
-        [
-            11341246792381009832,
-            {
-                "name": "Mesh"
-            }
-        ],
-        [
-            16103826526909103205,
-            {
-                "name": "House"
-            }
-        ],
-        [
-            17469926228775421924,
-            {
-                "name": "Directional Light"
-            }
-        ],
-        [
-            3536329278399176241,
-            {
-                "name": "Cube_2"
-            }
-        ],
-        [
-            11039069788792167689,
-            {
-                "name": "Cube_1"
-            }
-        ],
-        [
-            12756803389487990332,
-            {
-                "name": "Plane"
-            }
-        ],
-        [
-            12132074093294634086,
-            {
-                "name": "Mesh"
-            }
-        ],
-        [
-            1800063752590847275,
-            {
-                "name": "Spot Light"
-            }
-        ],
-        [
-            11597691623511648517,
-            {
-                "name": "Spot Light 2"
-            }
-        ],
-        [
-            14554775779459454050,
-            {
-                "name": "Mesh"
-            }
-        ]
-    ],
-    "childNodeIDs": [
-        [
-            17469926228775421924,
-            [
-                12132074093294634086
-            ]
-        ],
-        [
-            1800063752590847275,
-            [
-                11341246792381009832
-            ]
-        ],
-        [
-            11597691623511648517,
-            [
-                14554775779459454050
-            ]
-        ]
-    ],
     "entityIDs": [
-        14554775779459454050,
-        11597691623511648517,
-        11341246792381009832,
-        1800063752590847275,
-        12132074093294634086,
-        17469926228775421924,
-        12756803389487990332,
-        3536329278399176241,
-        11039069788792167689,
-        16103826526909103205,
-        18136592768410339886
+        15968294947860450824,
+        7642274883984446665,
+        15444641148739491847,
+        8499825926153933750,
+        5523242263760585776,
+        3001353463847845371,
+        6934964406097379158,
+        5359898195766220634,
+        13082294634005969314,
+        1996222322177408916,
+        8068130503905421966
     ],
-    "nodeIDToType": [
-        [
-            11341246792381009832,
-            "class puffin::rendering::StaticMeshNode3D"
-        ],
-        [
-            16103826526909103205,
-            "class puffin::rendering::StaticMeshNode3D"
-        ],
-        [
-            17469926228775421924,
-            "class puffin::rendering::DirectionalLightNode3D"
-        ],
-        [
-            3536329278399176241,
-            "class puffin::rendering::StaticMeshNode3D"
-        ],
-        [
-            11039069788792167689,
-            "class puffin::rendering::StaticMeshNode3D"
-        ],
-        [
-            12756803389487990332,
-            "class puffin::rendering::StaticMeshNode3D"
-        ],
-        [
-            12132074093294634086,
-            "class puffin::rendering::StaticMeshNode3D"
-        ],
-        [
-            1800063752590847275,
-            "class puffin::rendering::SpotLightNode3D"
-        ],
-        [
-            11597691623511648517,
-            "class puffin::rendering::SpotLightNode3D"
-        ],
-        [
-            14554775779459454050,
-            "class puffin::rendering::StaticMeshNode3D"
-        ]
-    ],
-    "nodeIDs": [
-        16103826526909103205,
-        11039069788792167689,
-        3536329278399176241,
-        12756803389487990332,
-        17469926228775421924,
-        12132074093294634086,
-        1800063752590847275,
-        11341246792381009832,
-        11597691623511648517,
-        14554775779459454050
+    "nodes": [
+        {
+            "data": {
+                "string": {
+                    "name": "House"
+                }
+            },
+            "id": 1996222322177408916,
+            "type": "StaticMeshNode3D"
+        },
+        {
+            "data": {
+                "string": {
+                    "name": "Cube_1"
+                }
+            },
+            "id": 13082294634005969314,
+            "type": "StaticMeshNode3D"
+        },
+        {
+            "data": {
+                "string": {
+                    "name": "Cube_2"
+                }
+            },
+            "id": 5359898195766220634,
+            "type": "StaticMeshNode3D"
+        },
+        {
+            "data": {
+                "string": {
+                    "name": "Plane"
+                }
+            },
+            "id": 6934964406097379158,
+            "type": "StaticMeshNode3D"
+        },
+        {
+            "childIDs": [
+                5523242263760585776
+            ],
+            "data": {
+                "bool": {
+                    "castShadows": false
+                },
+                "string": {
+                    "name": "Directional Light"
+                }
+            },
+            "id": 3001353463847845371,
+            "type": "DirectionalLightNode3D"
+        },
+        {
+            "data": {
+                "string": {
+                    "name": "Mesh"
+                }
+            },
+            "id": 5523242263760585776,
+            "type": "StaticMeshNode3D"
+        },
+        {
+            "childIDs": [
+                15444641148739491847
+            ],
+            "data": {
+                "bool": {
+                    "castShadows": false
+                },
+                "string": {
+                    "name": "Spot Light"
+                }
+            },
+            "id": 8499825926153933750,
+            "type": "SpotLightNode3D"
+        },
+        {
+            "data": {
+                "string": {
+                    "name": "Mesh"
+                }
+            },
+            "id": 15444641148739491847,
+            "type": "StaticMeshNode3D"
+        },
+        {
+            "childIDs": [
+                15968294947860450824
+            ],
+            "data": {
+                "bool": {
+                    "castShadows": false
+                },
+                "string": {
+                    "name": "Spot Light 2"
+                }
+            },
+            "id": 7642274883984446665,
+            "type": "SpotLightNode3D"
+        },
+        {
+            "data": {
+                "string": {
+                    "name": "Mesh"
+                }
+            },
+            "id": 15968294947860450824,
+            "type": "StaticMeshNode3D"
+        }
     ],
     "rootNodeIDs": [
-        16103826526909103205,
-        11039069788792167689,
-        3536329278399176241,
-        12756803389487990332,
-        17469926228775421924,
-        1800063752590847275,
-        11597691623511648517
+        1996222322177408916,
+        13082294634005969314,
+        5359898195766220634,
+        6934964406097379158,
+        3001353463847845371,
+        8499825926153933750,
+        7642274883984446665
     ],
     "struct puffin::TransformComponent3D": [
         [
-            1800063752590847275,
+            15968294947860450824,
             {
-                "orientationEulerAngles": {
-                    "pitch": 0.0,
-                    "roll": 0.0,
-                    "yaw": 0.0
-                },
-                "orientationQuat": {
-                    "w": 1.0,
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "position": {
-                    "x": -10.0,
-                    "y": 5.0,
-                    "z": 0.0
-                },
-                "scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
+                "archive": {
+                    "orientationEulerAngles": {
+                        "float": {
+                            "pitch": 0.0,
+                            "roll": 0.0,
+                            "yaw": 0.0
+                        }
+                    },
+                    "orientationQuat": {
+                        "float": {
+                            "w": 1.0,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": -0.0
+                        }
+                    },
+                    "position": {
+                        "float": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    },
+                    "scale": {
+                        "float": {
+                            "x": 0.25,
+                            "y": 0.25,
+                            "z": 0.25
+                        }
+                    }
                 }
             }
         ],
         [
-            3536329278399176241,
+            7642274883984446665,
             {
-                "orientationEulerAngles": {
-                    "pitch": 0.0,
-                    "roll": 0.0,
-                    "yaw": 0.0
-                },
-                "orientationQuat": {
-                    "w": 1.0,
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "position": {
-                    "x": -1.75,
-                    "y": -5.0,
-                    "z": 0.0
-                },
-                "scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
+                "archive": {
+                    "orientationEulerAngles": {
+                        "float": {
+                            "pitch": 0.0,
+                            "roll": 0.0,
+                            "yaw": 180.0
+                        }
+                    },
+                    "orientationQuat": {
+                        "float": {
+                            "w": -4.371138828673793e-08,
+                            "x": 0.0,
+                            "y": -1.0,
+                            "z": 0.0
+                        }
+                    },
+                    "position": {
+                        "float": {
+                            "x": 10.0,
+                            "y": 5.0,
+                            "z": 0.0
+                        }
+                    },
+                    "scale": {
+                        "float": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        }
+                    }
                 }
             }
         ],
         [
-            11039069788792167689,
+            15444641148739491847,
             {
-                "orientationEulerAngles": {
-                    "pitch": 0.0,
-                    "roll": 0.0,
-                    "yaw": 0.0
-                },
-                "orientationQuat": {
-                    "w": 1.0,
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "position": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
+                "archive": {
+                    "orientationEulerAngles": {
+                        "float": {
+                            "pitch": 0.0,
+                            "roll": 0.0,
+                            "yaw": 0.0
+                        }
+                    },
+                    "orientationQuat": {
+                        "float": {
+                            "w": 1.0,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": -0.0
+                        }
+                    },
+                    "position": {
+                        "float": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    },
+                    "scale": {
+                        "float": {
+                            "x": 0.25,
+                            "y": 0.25,
+                            "z": 0.25
+                        }
+                    }
                 }
             }
         ],
         [
-            11341246792381009832,
+            5359898195766220634,
             {
-                "orientationEulerAngles": {
-                    "pitch": 0.0,
-                    "roll": 0.0,
-                    "yaw": 0.0
-                },
-                "orientationQuat": {
-                    "w": 1.0,
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "position": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "scale": {
-                    "x": 0.25,
-                    "y": 0.25,
-                    "z": 0.25
+                "archive": {
+                    "orientationEulerAngles": {
+                        "float": {
+                            "pitch": 0.0,
+                            "roll": 0.0,
+                            "yaw": 0.0
+                        }
+                    },
+                    "orientationQuat": {
+                        "float": {
+                            "w": 1.0,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": -0.0
+                        }
+                    },
+                    "position": {
+                        "float": {
+                            "x": -1.75,
+                            "y": -5.0,
+                            "z": 0.0
+                        }
+                    },
+                    "scale": {
+                        "float": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        }
+                    }
                 }
             }
         ],
         [
-            11597691623511648517,
+            3001353463847845371,
             {
-                "orientationEulerAngles": {
-                    "pitch": 0.0,
-                    "roll": 0.0,
-                    "yaw": 180.0
-                },
-                "orientationQuat": {
-                    "w": -4.371138828673793e-08,
-                    "x": 0.0,
-                    "y": -1.0,
-                    "z": 0.0
-                },
-                "position": {
-                    "x": 10.0,
-                    "y": 5.0,
-                    "z": 0.0
-                },
-                "scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
+                "archive": {
+                    "orientationEulerAngles": {
+                        "float": {
+                            "pitch": 0.0,
+                            "roll": 0.0,
+                            "yaw": -90.0
+                        }
+                    },
+                    "orientationQuat": {
+                        "float": {
+                            "w": 0.7071067690849304,
+                            "x": 0.0,
+                            "y": 0.7071067690849304,
+                            "z": 0.0
+                        }
+                    },
+                    "position": {
+                        "float": {
+                            "x": 0.0,
+                            "y": 10.0,
+                            "z": 0.0
+                        }
+                    },
+                    "scale": {
+                        "float": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        }
+                    }
                 }
             }
         ],
         [
-            12132074093294634086,
+            13082294634005969314,
             {
-                "orientationEulerAngles": {
-                    "pitch": 0.0,
-                    "roll": 0.0,
-                    "yaw": 0.0
-                },
-                "orientationQuat": {
-                    "w": 1.0,
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "position": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "scale": {
-                    "x": 0.25,
-                    "y": 0.25,
-                    "z": 0.25
+                "archive": {
+                    "orientationEulerAngles": {
+                        "float": {
+                            "pitch": 0.0,
+                            "roll": 0.0,
+                            "yaw": 0.0
+                        }
+                    },
+                    "orientationQuat": {
+                        "float": {
+                            "w": 1.0,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": -0.0
+                        }
+                    },
+                    "position": {
+                        "float": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    },
+                    "scale": {
+                        "float": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        }
+                    }
                 }
             }
         ],
         [
-            12756803389487990332,
+            5523242263760585776,
             {
-                "orientationEulerAngles": {
-                    "pitch": 0.0,
-                    "roll": 0.0,
-                    "yaw": 0.0
-                },
-                "orientationQuat": {
-                    "w": 1.0,
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "position": {
-                    "x": 0.0,
-                    "y": -10.0,
-                    "z": 0.0
-                },
-                "scale": {
-                    "x": 50.0,
-                    "y": 1.0,
-                    "z": 50.0
+                "archive": {
+                    "orientationEulerAngles": {
+                        "float": {
+                            "pitch": 0.0,
+                            "roll": 0.0,
+                            "yaw": 0.0
+                        }
+                    },
+                    "orientationQuat": {
+                        "float": {
+                            "w": 1.0,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": -0.0
+                        }
+                    },
+                    "position": {
+                        "float": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    },
+                    "scale": {
+                        "float": {
+                            "x": 0.25,
+                            "y": 0.25,
+                            "z": 0.25
+                        }
+                    }
                 }
             }
         ],
         [
-            14554775779459454050,
+            8499825926153933750,
             {
-                "orientationEulerAngles": {
-                    "pitch": 0.0,
-                    "roll": 0.0,
-                    "yaw": 0.0
-                },
-                "orientationQuat": {
-                    "w": 1.0,
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "position": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "scale": {
-                    "x": 0.25,
-                    "y": 0.25,
-                    "z": 0.25
+                "archive": {
+                    "orientationEulerAngles": {
+                        "float": {
+                            "pitch": 0.0,
+                            "roll": 0.0,
+                            "yaw": 0.0
+                        }
+                    },
+                    "orientationQuat": {
+                        "float": {
+                            "w": 1.0,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": -0.0
+                        }
+                    },
+                    "position": {
+                        "float": {
+                            "x": -10.0,
+                            "y": 5.0,
+                            "z": 0.0
+                        }
+                    },
+                    "scale": {
+                        "float": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        }
+                    }
                 }
             }
         ],
         [
-            16103826526909103205,
+            6934964406097379158,
             {
-                "orientationEulerAngles": {
-                    "pitch": 0.0,
-                    "roll": 0.0,
-                    "yaw": 0.0
-                },
-                "orientationQuat": {
-                    "w": 1.0,
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "position": {
-                    "x": 2.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
+                "archive": {
+                    "orientationEulerAngles": {
+                        "float": {
+                            "pitch": 0.0,
+                            "roll": 0.0,
+                            "yaw": 0.0
+                        }
+                    },
+                    "orientationQuat": {
+                        "float": {
+                            "w": 1.0,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": -0.0
+                        }
+                    },
+                    "position": {
+                        "float": {
+                            "x": 0.0,
+                            "y": -10.0,
+                            "z": 0.0
+                        }
+                    },
+                    "scale": {
+                        "float": {
+                            "x": 50.0,
+                            "y": 1.0,
+                            "z": 50.0
+                        }
+                    }
                 }
             }
         ],
         [
-            17469926228775421924,
+            1996222322177408916,
             {
-                "orientationEulerAngles": {
-                    "pitch": 0.0,
-                    "roll": 0.0,
-                    "yaw": -90.0
+                "archive": {
+                    "orientationEulerAngles": {
+                        "float": {
+                            "pitch": 0.0,
+                            "roll": 0.0,
+                            "yaw": 0.0
+                        }
+                    },
+                    "orientationQuat": {
+                        "float": {
+                            "w": 1.0,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": -0.0
+                        }
+                    },
+                    "position": {
+                        "float": {
+                            "x": 2.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    },
+                    "scale": {
+                        "float": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        }
+                    }
+                }
+            }
+        ],
+        [
+            8068130503905421966,
+            {
+                "archive": {
+                    "orientationEulerAngles": {
+                        "float": {
+                            "pitch": 0.0,
+                            "roll": 0.0,
+                            "yaw": 0.0
+                        }
+                    },
+                    "orientationQuat": {
+                        "float": {
+                            "w": 1.0,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": -0.0
+                        }
+                    },
+                    "position": {
+                        "float": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 10.0
+                        }
+                    },
+                    "scale": {
+                        "float": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        }
+                    }
+                }
+            }
+        ]
+    ],
+    "struct puffin::rendering::CameraComponent3D": [
+        [
+            8068130503905421966,
+            {
+                "archive": {
+                    "up": {
+                        "float": {
+                            "x": 0.0,
+                            "y": 1.0,
+                            "z": 0.0
+                        }
+                    }
                 },
-                "orientationQuat": {
-                    "w": 0.7071067690849304,
-                    "x": 0.0,
-                    "y": 0.7071067690849304,
-                    "z": 0.0
+                "bool": {
+                    "active": false
                 },
-                "position": {
-                    "x": 0.0,
-                    "y": 10.0,
-                    "z": 0.0
-                },
-                "scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
+                "float": {
+                    "aspect": 0.0,
+                    "fovY": 60.0,
+                    "zFar": 200.0,
+                    "zNear": 0.009999999776482582
                 }
             }
         ]
     ],
     "struct puffin::rendering::DirectionalLightComponent3D": [
         [
-            17469926228775421924,
+            3001353463847845371,
             {
-                "ambientIntensity": 0.0,
-                "color": {
-                    "x": 0.05000000074505806,
-                    "y": 0.05000000074505806,
-                    "z": 0.05000000074505806
+                "archive": {
+                    "color": {
+                        "float": {
+                            "x": 0.05000000074505806,
+                            "y": 0.05000000074505806,
+                            "z": 0.05000000074505806
+                        }
+                    }
                 },
-                "specularExponent": 64,
-                "specularIntensity": 1.0
+                "float": {
+                    "ambientIntensity": 0.0,
+                    "specularIntensity": 1.0
+                },
+                "intS32": {
+                    "specularExponent": 64
+                }
             }
         ]
     ],
     "struct puffin::rendering::ShadowCasterComponent3D": [
         [
-            1800063752590847275,
+            7642274883984446665,
             {
-                "biasMax": 0.5,
-                "biasMin": 0.05000000074505806,
-                "boundsMult": 2.0,
-                "cascadeCount": 1,
-                "height": 8192,
-                "width": 8192
+                "float": {
+                    "biasMax": 0.5,
+                    "biasMin": 0.05000000074505806,
+                    "boundsMult": 2.0
+                },
+                "intS32": {
+                    "cascadeCount": 1
+                },
+                "intU16": {
+                    "height": 8192,
+                    "width": 8192
+                }
             }
         ],
         [
-            11597691623511648517,
+            8499825926153933750,
             {
-                "biasMax": 0.5,
-                "biasMin": 0.05000000074505806,
-                "boundsMult": 2.0,
-                "cascadeCount": 1,
-                "height": 8192,
-                "width": 8192
+                "float": {
+                    "biasMax": 0.5,
+                    "biasMin": 0.05000000074505806,
+                    "boundsMult": 2.0
+                },
+                "intS32": {
+                    "cascadeCount": 1
+                },
+                "intU16": {
+                    "height": 8192,
+                    "width": 8192
+                }
             }
         ],
         [
-            17469926228775421924,
+            3001353463847845371,
             {
-                "biasMax": 0.5,
-                "biasMin": 0.30000001192092896,
-                "boundsMult": 2.0,
-                "cascadeCount": 1,
-                "height": 8192,
-                "width": 8192
+                "float": {
+                    "biasMax": 0.5,
+                    "biasMin": 0.30000001192092896,
+                    "boundsMult": 2.0
+                },
+                "intS32": {
+                    "cascadeCount": 1
+                },
+                "intU16": {
+                    "height": 8192,
+                    "width": 8192
+                }
             }
         ]
     ],
     "struct puffin::rendering::SpotLightComponent3D": [
         [
-            1800063752590847275,
+            7642274883984446665,
             {
-                "ambientIntensity": 0.0,
-                "color": {
-                    "x": 0.5,
-                    "y": 0.5,
-                    "z": 1.0
+                "archive": {
+                    "color": {
+                        "float": {
+                            "x": 1.0,
+                            "y": 0.5,
+                            "z": 0.5
+                        }
+                    }
                 },
-                "constantAttenuation": 1.0,
-                "direction": {
-                    "x": 1.0,
-                    "y": 0.0,
-                    "z": 0.0
+                "float": {
+                    "ambientIntensity": 0.0,
+                    "constantAttenuation": 1.0,
+                    "innerCutoffAngle": 30.0,
+                    "linearAttenuation": 0.09000000357627869,
+                    "outerCutoffAngle": 45.0,
+                    "quadraticAttenuation": 0.03200000151991844,
+                    "specularIntensity": 1.0
                 },
-                "innerCutoffAngle": 30.0,
-                "linearAttenuation": 0.09000000357627869,
-                "outerCutoffAngle": 45.0,
-                "quadraticAttenuation": 0.03200000151991844,
-                "specularExponent": 64,
-                "specularIntensity": 1.0
+                "intS32": {
+                    "specularExponent": 64
+                }
             }
         ],
         [
-            11597691623511648517,
+            8499825926153933750,
             {
-                "ambientIntensity": 0.0,
-                "color": {
-                    "x": 1.0,
-                    "y": 0.5,
-                    "z": 0.5
+                "archive": {
+                    "color": {
+                        "float": {
+                            "x": 0.5,
+                            "y": 0.5,
+                            "z": 1.0
+                        }
+                    }
                 },
-                "constantAttenuation": 1.0,
-                "direction": {
-                    "x": 1.0,
-                    "y": 0.0,
-                    "z": 0.0
+                "float": {
+                    "ambientIntensity": 0.0,
+                    "constantAttenuation": 1.0,
+                    "innerCutoffAngle": 30.0,
+                    "linearAttenuation": 0.09000000357627869,
+                    "outerCutoffAngle": 45.0,
+                    "quadraticAttenuation": 0.03200000151991844,
+                    "specularIntensity": 1.0
                 },
-                "innerCutoffAngle": 30.0,
-                "linearAttenuation": 0.09000000357627869,
-                "outerCutoffAngle": 45.0,
-                "quadraticAttenuation": 0.03200000151991844,
-                "specularExponent": 64,
-                "specularIntensity": 1.0
+                "intS32": {
+                    "specularExponent": 64
+                }
             }
         ]
     ],
     "struct puffin::rendering::StaticMeshComponent3D": [
         [
-            3536329278399176241,
+            15968294947860450824,
             {
-                "materialID": 7589626914278510215,
-                "meshID": 9051151466792209371,
-                "subMeshIdx": 0
+                "intU64": {
+                    "materialID": 7589626914278510215,
+                    "meshID": 9051151466792209371
+                },
+                "intU8": {
+                    "subMeshIdx": 0
+                }
             }
         ],
         [
-            11039069788792167689,
+            5359898195766220634,
             {
-                "materialID": 7589626914278510215,
-                "meshID": 9051151466792209371,
-                "subMeshIdx": 0
+                "intU64": {
+                    "materialID": 7589626914278510215,
+                    "meshID": 9051151466792209371
+                },
+                "intU8": {
+                    "subMeshIdx": 0
+                }
             }
         ],
         [
-            11341246792381009832,
+            15444641148739491847,
             {
-                "materialID": 7589626914278510215,
-                "meshID": 9051151466792209371,
-                "subMeshIdx": 0
+                "intU64": {
+                    "materialID": 7589626914278510215,
+                    "meshID": 9051151466792209371
+                },
+                "intU8": {
+                    "subMeshIdx": 0
+                }
             }
         ],
         [
-            12132074093294634086,
+            13082294634005969314,
             {
-                "materialID": 7589626914278510215,
-                "meshID": 9051151466792209371,
-                "subMeshIdx": 0
+                "intU64": {
+                    "materialID": 7589626914278510215,
+                    "meshID": 9051151466792209371
+                },
+                "intU8": {
+                    "subMeshIdx": 0
+                }
             }
         ],
         [
-            12756803389487990332,
+            5523242263760585776,
             {
-                "materialID": 7589626914278510215,
-                "meshID": 9051151466792209371,
-                "subMeshIdx": 0
+                "intU64": {
+                    "materialID": 7589626914278510215,
+                    "meshID": 9051151466792209371
+                },
+                "intU8": {
+                    "subMeshIdx": 0
+                }
             }
         ],
         [
-            14554775779459454050,
+            1996222322177408916,
             {
-                "materialID": 7589626914278510215,
-                "meshID": 9051151466792209371,
-                "subMeshIdx": 0
+                "intU64": {
+                    "materialID": 7589626914278510215,
+                    "meshID": 7844429595245869321
+                },
+                "intU8": {
+                    "subMeshIdx": 0
+                }
             }
         ],
         [
-            16103826526909103205,
+            6934964406097379158,
             {
-                "materialID": 7589626914278510215,
-                "meshID": 7844429595245869321,
-                "subMeshIdx": 0
+                "intU64": {
+                    "materialID": 7589626914278510215,
+                    "meshID": 9051151466792209371
+                },
+                "intU8": {
+                    "subMeshIdx": 0
+                }
             }
         ]
     ]
