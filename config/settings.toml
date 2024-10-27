@@ -1,0 +1,21 @@
+[editor]
+camera_fov = 60.0
+
+[general]
+framerate_limit = 60
+framerate_limit_enable = true
+mouse_sensitivity = 0.05
+unit_scale = 1.0
+
+[physics.gravity_2d]
+x = 0.0
+y = -9.81
+
+[physics.gravity_3d]
+x = 0.0
+y = -9.81
+z = 0.0
+
+[rendering]
+shadows_enable = true
+
