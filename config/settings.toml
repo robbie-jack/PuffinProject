@@ -7,6 +7,9 @@ framerate_limit_enable = true
 mouse_sensitivity = 0.05
 unit_scale = 1.0
 
+[physics]
+ticks_per_second = 60
+
 [physics.gravity_2d]
 x = 0.0
 y = -9.81
