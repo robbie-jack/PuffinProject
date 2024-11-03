@@ -3,19 +3,20 @@ camera_fov = 60.0
 camera_speed = 50.0
 camera_start_position_x = 0.0
 camera_start_position_y = 0.0
-camera_start_position_z = 150.0
+camera_start_position_z = 400.0
 
 [general]
 framerate_limit = 120
 framerate_limit_enable = true
 mouse_sensitivity = 0.05
 unit_scale = 1.0
+thread_count = 6 # Number of threads to perform multithreaded tasks on
 
 [physics]
-ticks_per_second = 60
+ticks_per_second = 60 # Number of times physics engines ticks per second
 sub_steps = 4
 gravity_x = 0.0
-gravity_y = -9.81
+gravity_y = 0.0
 gravity_z = 0.0
 box2d_enable = true
 jolt_enable = false
