@@ -6,8 +6,7 @@ camera_start_position_y = 0.0
 camera_start_position_z = 400.0
 
 [general]
-framerate_limit = 120
-framerate_limit_enable = true
+framerate_limit = 60
 mouse_sensitivity = 0.05
 unit_scale = 1.0
 thread_count = 6 # Number of threads to perform multithreaded tasks on
