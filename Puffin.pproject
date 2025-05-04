@@ -1,5 +1,5 @@
 {
     "additionalContentDirectories": [],
-    "defaultScenePath": "scenes/default.pscene",
+    "defaultScenePath": "scenes/default2d.pscene",
     "name": "Puffin"
 }
