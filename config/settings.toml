@@ -22,4 +22,4 @@ jolt_enable = false
 
 [rendering]
 shadows_enable = true
-
+physics_interpolation_enable = true
