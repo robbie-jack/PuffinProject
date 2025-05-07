@@ -21,10 +21,6 @@ box2d_enable = true
 jolt_enable = false
 
 [rendering]
-screen_width = 1920 # Width of screen to display to
-screen_height = 1080 # Height of screen to display to
-render_width = 1920 # Width of render target (scales up to screen width)
-render_height = 1080 # Height of render target (scale up to screen height)
 fullscreen = false
 borderless = false
 shadows_enable = true
