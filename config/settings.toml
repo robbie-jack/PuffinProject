@@ -1,6 +1,6 @@
 [editor]
 camera_fov = 60.0
-camera_zoom = 4.0
+camera_zoom = 1.0
 camera_speed = 250.0
 camera_start_position_x = 0.0
 camera_start_position_y = 0.0
@@ -26,3 +26,4 @@ fullscreen = false
 borderless = false
 shadows_enable = true
 physics_interpolation_enable = true
+pixel_scale = 32
